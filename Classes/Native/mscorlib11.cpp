@@ -12376,7 +12376,7 @@ IL_0009:
 		Type_t * L_1 = V_0;
 		NullCheck(L_1);
 		Type_t * L_2;
-		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_1);
+		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_1);
 		V_0 = L_2;
 	}
 
@@ -12418,14 +12418,14 @@ IL_0010:
 		Type_t * L_11 = __this->get_ClassImpl_0();
 		NullCheck(L_11);
 		String_t* L_12;
-		L_12 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_11);
+		L_12 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_11);
 		MemberInfo_t * L_13 = __this->get_MemberImpl_2();
 		NullCheck(L_13);
 		Type_t * L_14;
 		L_14 = VirtFuncInvoker0< Type_t * >::Invoke(8 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_13);
 		NullCheck(L_14);
 		String_t* L_15;
-		L_15 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_14);
+		L_15 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_14);
 		bool L_16;
 		L_16 = String_op_Equality_m50B3548E4AC232558190B0052877B290AA1D436A(L_12, L_15, /*hidden argument*/NULL);
 		G_B7_0 = ((int32_t)(L_16));
@@ -12448,7 +12448,7 @@ IL_005a:
 		Type_t * L_17 = __this->get_ClassImpl_0();
 		NullCheck(L_17);
 		String_t* L_18;
-		L_18 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_17);
+		L_18 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_17);
 		G_B10_0 = L_18;
 		goto IL_0074;
 	}
@@ -12538,7 +12538,7 @@ IL_0014:
 		bool L_9 = ___serialization3;
 		NullCheck(L_8);
 		String_t* L_10;
-		L_10 = VirtFuncInvoker1< String_t*, bool >::Invoke(121 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
+		L_10 = VirtFuncInvoker1< String_t*, bool >::Invoke(120 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
 		V_1 = L_10;
 		NullCheck(L_8);
 		bool L_11;

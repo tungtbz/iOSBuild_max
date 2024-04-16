@@ -10,7 +10,6 @@
 
 @interface rofisdk : NSObject<AppOpenAdManagerDelegate>{
     bool isAATFlowFinished;
-    bool isUMPFlowFinished;
     bool isRunConsentFlow;
     bool isRemoteConfigFetched;
     int consentCode;
@@ -24,6 +23,7 @@
 - (void)warmUp;
 - (void)InitAdsService;
 - (BOOL)IsConsentFlowDone;
+- (BOOL)IsATTFlowFinished;
 - (BOOL)IsRemoteConfigFetched;
 - (int)consentCode;
 

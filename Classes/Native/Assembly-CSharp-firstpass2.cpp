@@ -8404,11 +8404,11 @@ IL_0010:
 		int32_t L_4 = V_0;
 		NullCheck(L_3);
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_5;
-		L_5 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(47 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_3, L_4);
+		L_5 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(46 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_3, L_4);
 		Type_t * L_6 = ___type0;
 		NullCheck(L_6);
 		Type_t * L_7;
-		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(32 /* System.Type System.Type::get_BaseType() */, L_6);
+		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Type::get_BaseType() */, L_6);
 		IL2CPP_RUNTIME_CLASS_INIT(SoundManagerTools_t9D55E8A6665AD6074881D65D83922C4513DB0106_il2cpp_TypeInfo_var);
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_8;
 		L_8 = SoundManagerTools_GetAllFieldInfos_m7FDA0DEEED9D4865142015A1794059BFA9352D91(L_7, /*hidden argument*/NULL);

@@ -26982,7 +26982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_NavMeshDataInstance_Write_m
 		L_3 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		String_t* L_4;
-		L_4 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_3);
+		L_4 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_3);
 		NullCheck(L_1);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_1, _stringLiteralF257BA730556D28459A52017386DD058FF4832A6, L_4);
 		// writer.WriteProperty ( "owner", navMeshDataInstance.owner );
@@ -28116,7 +28116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_NavMeshLinkInstance_Write_m
 		L_3 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		String_t* L_4;
-		L_4 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_3);
+		L_4 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_3);
 		NullCheck(L_1);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_1, _stringLiteralF257BA730556D28459A52017386DD058FF4832A6, L_4);
 		// writer.WriteProperty ( "owner", navMeshLinkInstance.owner );

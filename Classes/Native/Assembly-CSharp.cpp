@@ -35508,7 +35508,7 @@ IL_0035:
 		AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_8 = ___reference0;
 		NullCheck(L_8);
 		RuntimeObject * L_9;
-		L_9 = VirtFuncInvoker0< RuntimeObject * >::Invoke(6 /* System.Object UnityEngine.AddressableAssets.AssetReference::get_RuntimeKey() */, L_8);
+		L_9 = VirtFuncInvoker0< RuntimeObject * >::Invoke(5 /* System.Object UnityEngine.AddressableAssets.AssetReference::get_RuntimeKey() */, L_8);
 		NullCheck(L_9);
 		String_t* L_10;
 		L_10 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_9);
@@ -36120,7 +36120,7 @@ IL_0039:
 		// reference.ReleaseAsset();
 		AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_13 = ___reference0;
 		NullCheck(L_13);
-		VirtActionInvoker0::Invoke(18 /* System.Void UnityEngine.AddressableAssets.AssetReference::ReleaseAsset() */, L_13);
+		VirtActionInvoker0::Invoke(11 /* System.Void UnityEngine.AddressableAssets.AssetReference::ReleaseAsset() */, L_13);
 		// }
 		return;
 	}
@@ -37946,7 +37946,7 @@ IL_0060:
 		int32_t L_21 = ___priority3;
 		NullCheck(L_18);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_22;
-		L_22 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(13 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_18, L_19, L_20, L_21);
+		L_22 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(8 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_18, L_19, L_20, L_21);
 		V_2 = L_22;
 		// operation.Completed += handle => OnLoadSceneCompleted(handle, key);
 		U3CU3Ec__DisplayClass66_0_t5D5227B45EFE0E960F954FDEE4EE98F22C34CE33 * L_23 = V_0;
@@ -38356,7 +38356,7 @@ IL_0057:
 		AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_16 = ___reference0;
 		NullCheck(L_16);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_17;
-		L_17 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(14 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_16);
+		L_17 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(9 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_16);
 		// }
 		goto IL_007a;
 	} // end try (depth: 1)
@@ -38709,7 +38709,7 @@ IL_003b:
 		bool L_13 = ___inWorldSpace2;
 		NullCheck(L_11);
 		AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298  L_14;
-		L_14 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(16 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_11, L_12, L_13);
+		L_14 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(10 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_11, L_12, L_13);
 		V_1 = L_14;
 		// operation.Completed += handle => OnInstantiateCompleted(handle, key, true);
 		U3CU3Ec__DisplayClass70_0_tF1BB5731E05725794F8847667FF6776B73DD58EA * L_15 = V_0;
@@ -39611,7 +39611,7 @@ IL_0073:
 		int32_t L_30 = ___priority5;
 		NullCheck(L_27);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_31;
-		L_31 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(13 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_27, L_28, L_29, L_30);
+		L_31 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(8 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_27, L_28, L_29, L_30);
 		V_2 = L_31;
 		// operation.Completed += handle => OnLoadSceneCompleted(handle, key, onSucceeded, onFailed);
 		U3CU3Ec__DisplayClass77_0_tF501AC87EE3F5A275F9388C3D0BA7AF575C635F9 * L_32 = V_0;
@@ -40123,7 +40123,7 @@ IL_0073:
 		AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_27 = ___reference0;
 		NullCheck(L_27);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_28;
-		L_28 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(14 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_27);
+		L_28 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(9 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_27);
 		V_1 = L_28;
 		// operation.Completed += handle => OnUnloadSceneCompleted(handle, key, onSucceeded, onFailed);
 		U3CU3Ec__DisplayClass79_0_t4F7B61B13BB267A11EA87DBA33A7807ED64DFAE1 * L_29 = V_0;
@@ -40525,7 +40525,7 @@ IL_003a:
 		bool L_16 = ___inWorldSpace4;
 		NullCheck(L_14);
 		AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298  L_17;
-		L_17 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(16 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_14, L_15, L_16);
+		L_17 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(10 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_14, L_15, L_16);
 		V_1 = L_17;
 		// operation.Completed += handle => OnInstantiateCompleted(handle, key, true, onSucceeded, onFailed);
 		U3CU3Ec__DisplayClass81_0_tD23CA980DE0A7CEF64B0A98F82B187AC8FE9ADB8 * L_18 = V_0;
@@ -40964,7 +40964,7 @@ IL_0014:
 		L_4 = AsyncOperationHandle_1_get_Result_m6FF287B88BF94562A91939CA84577D70E4065802((AsyncOperationHandle_1_tACBCEBB25FC221B2183225C6276396BB356E14DE *)(&___handle0), /*hidden argument*/AsyncOperationHandle_1_get_Result_m6FF287B88BF94562A91939CA84577D70E4065802_RuntimeMethod_var);
 		NullCheck(L_4);
 		RuntimeObject* L_5;
-		L_5 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Collections.Generic.IEnumerable`1<System.Object> UnityEngine.AddressableAssets.ResourceLocators.IResourceLocator::get_Keys() */, IResourceLocator_tF8C315ADD0E8B6B6E5869F3D25AE9145593E8444_il2cpp_TypeInfo_var, L_4);
+		L_5 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerable`1<System.Object> UnityEngine.AddressableAssets.ResourceLocators.IResourceLocator::get_Keys() */, IResourceLocator_tF8C315ADD0E8B6B6E5869F3D25AE9145593E8444_il2cpp_TypeInfo_var, L_4);
 		NullCheck(L_3);
 		List_1_AddRange_m6465DEF706EB529B4227F2AF79338419D517EDF9(L_3, L_5, /*hidden argument*/List_1_AddRange_m6465DEF706EB529B4227F2AF79338419D517EDF9_RuntimeMethod_var);
 		// onSucceeded?.Invoke();
@@ -58214,18 +58214,18 @@ IL_0039:
 		Type_t * L_12 = ___type0;
 		NullCheck(L_12);
 		bool L_13;
-		L_13 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsEnum() */, L_12);
+		L_13 = VirtFuncInvoker0< bool >::Invoke(77 /* System.Boolean System.Type::get_IsEnum() */, L_12);
 		V_3 = L_13;
 		// isSerializable = type.IsSerializable;
 		Type_t * L_14 = ___type0;
 		NullCheck(L_14);
 		bool L_15;
-		L_15 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_14);
+		L_15 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_14);
 		// isGeneric = type.IsGenericType;
 		Type_t * L_16 = ___type0;
 		NullCheck(L_16);
 		bool L_17;
-		L_17 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericType() */, L_16);
+		L_17 = VirtFuncInvoker0< bool >::Invoke(81 /* System.Boolean System.Type::get_IsGenericType() */, L_16);
 		V_4 = L_17;
 		// if (type == typeof(UnityEngine.GameObject))
 		Type_t * L_18 = ___type0;
@@ -58352,7 +58352,7 @@ IL_0101:
 		Type_t * L_56 = V_12;
 		NullCheck(L_56);
 		Type_t * L_57;
-		L_57 = VirtFuncInvoker0< Type_t * >::Invoke(32 /* System.Type System.Type::get_BaseType() */, L_56);
+		L_57 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Type::get_BaseType() */, L_56);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_58 = { reinterpret_cast<intptr_t> (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_59;
@@ -58983,7 +58983,7 @@ IL_047d:
 		Type_t * L_225 = ___type0;
 		NullCheck(L_225);
 		Type_t * L_226;
-		L_226 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_225);
+		L_226 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_225);
 		V_16 = L_226;
 		// int rank = m_Reader.ReadInt32();
 		BinaryReader_t4F45C15FF44F8E1C105704A21FFBE58D60015128 * L_227 = __this->get_m_Reader_0();
@@ -59314,7 +59314,7 @@ IL_0629:
 		Type_t * L_314 = ___type0;
 		NullCheck(L_314);
 		Type_t * L_315;
-		L_315 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_314);
+		L_315 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_314);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_316 = { reinterpret_cast<intptr_t> (KeyValuePair_2_t4451D0958080362C54F19A3F39A254682CE0D1D5_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_317;
@@ -59331,7 +59331,7 @@ IL_0629:
 		Type_t * L_319 = ___type0;
 		NullCheck(L_319);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_320;
-		L_320 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_319);
+		L_320 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_319);
 		V_29 = L_320;
 		// result = Activator.CreateInstance(type, Read(genericArgs[0]), Read(genericArgs[1]));
 		Type_t * L_321 = ___type0;
@@ -59376,7 +59376,7 @@ IL_0678:
 		Type_t * L_335 = ___type0;
 		NullCheck(L_335);
 		Type_t * L_336;
-		L_336 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_335);
+		L_336 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_335);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_337 = { reinterpret_cast<intptr_t> (List_1_t2F377D93C74B8090B226DCC307AB5BB600181453_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_338;
@@ -59393,7 +59393,7 @@ IL_0678:
 		Type_t * L_340 = ___type0;
 		NullCheck(L_340);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_341;
-		L_341 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_340);
+		L_341 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_340);
 		V_30 = L_341;
 		// IList list = (IList)Activator.CreateInstance(type);
 		Type_t * L_342 = ___type0;
@@ -59460,7 +59460,7 @@ IL_06e0:
 		Type_t * L_357 = ___type0;
 		NullCheck(L_357);
 		Type_t * L_358;
-		L_358 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_357);
+		L_358 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_357);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_359 = { reinterpret_cast<intptr_t> (LinkedList_1_t21E8FA104303548F9AE8F6BBA53BA4EE0F25D0AD_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_360;
@@ -59477,7 +59477,7 @@ IL_06e0:
 		Type_t * L_362 = ___type0;
 		NullCheck(L_362);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_363;
-		L_363 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_362);
+		L_363 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_362);
 		V_34 = L_363;
 		// object linkedList = Activator.CreateInstance(type);
 		Type_t * L_364 = ___type0;
@@ -59559,7 +59559,7 @@ IL_075d:
 		Type_t * L_385 = ___type0;
 		NullCheck(L_385);
 		Type_t * L_386;
-		L_386 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_385);
+		L_386 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_385);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_387 = { reinterpret_cast<intptr_t> (Dictionary_2_t58021767EFD70313A4DB609BB2EC63167C586EDE_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_388;
@@ -59575,7 +59575,7 @@ IL_075d:
 		Type_t * L_390 = ___type0;
 		NullCheck(L_390);
 		Type_t * L_391;
-		L_391 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_390);
+		L_391 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_390);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_392 = { reinterpret_cast<intptr_t> (SortedDictionary_2_t066555DA7AB5E023BB29FF0E5E7FA4C0CD7C6480_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_393;
@@ -59591,7 +59591,7 @@ IL_075d:
 		Type_t * L_395 = ___type0;
 		NullCheck(L_395);
 		Type_t * L_396;
-		L_396 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_395);
+		L_396 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_395);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_397 = { reinterpret_cast<intptr_t> (SortedList_2_t7DFAD8C0AEFEBF86204BAE10672E720AA6FCE7B3_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_398;
@@ -59610,7 +59610,7 @@ IL_07ac:
 		Type_t * L_400 = ___type0;
 		NullCheck(L_400);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_401;
-		L_401 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_400);
+		L_401 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_400);
 		V_39 = L_401;
 		// IDictionary dictionary = (IDictionary)Activator.CreateInstance(type);
 		Type_t * L_402 = ___type0;
@@ -59631,7 +59631,7 @@ IL_07ac:
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_408 = V_39;
 		NullCheck(L_407);
 		Type_t * L_409;
-		L_409 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_407, L_408);
+		L_409 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_407, L_408);
 		V_42 = L_409;
 		// PropertyInfo keyProperty = keyValuePairType.GetProperty("Key", TypeUtils.SavableBindingFlags);
 		Type_t * L_410 = V_42;
@@ -59707,7 +59707,7 @@ IL_083f:
 		Type_t * L_428 = ___type0;
 		NullCheck(L_428);
 		Type_t * L_429;
-		L_429 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_428);
+		L_429 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_428);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_430 = { reinterpret_cast<intptr_t> (Stack_1_t8B41AD867BA211178643B3152EFA0052D0D10E8A_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_431;
@@ -59724,7 +59724,7 @@ IL_083f:
 		Type_t * L_433 = ___type0;
 		NullCheck(L_433);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_434;
-		L_434 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_433);
+		L_434 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_433);
 		V_47 = L_434;
 		// object stack = Activator.CreateInstance(type);
 		Type_t * L_435 = ___type0;
@@ -59803,7 +59803,7 @@ IL_08ba:
 		Type_t * L_455 = ___type0;
 		NullCheck(L_455);
 		Type_t * L_456;
-		L_456 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_455);
+		L_456 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_455);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_457 = { reinterpret_cast<intptr_t> (Queue_1_t35C7D99DE472AE22FDB51D7F4F804B7B656DD6DC_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_458;
@@ -59820,7 +59820,7 @@ IL_08ba:
 		Type_t * L_460 = ___type0;
 		NullCheck(L_460);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_461;
-		L_461 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_460);
+		L_461 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_460);
 		V_52 = L_461;
 		// object queue = Activator.CreateInstance(type);
 		Type_t * L_462 = ___type0;
@@ -59899,7 +59899,7 @@ IL_0935:
 		Type_t * L_482 = ___type0;
 		NullCheck(L_482);
 		Type_t * L_483;
-		L_483 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_482);
+		L_483 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_482);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_484 = { reinterpret_cast<intptr_t> (HashSet_1_t7366A48A7E46B2A1E050EA9D62BC9FCA32AFF80B_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_485;
@@ -59916,7 +59916,7 @@ IL_0935:
 		Type_t * L_487 = ___type0;
 		NullCheck(L_487);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_488;
-		L_488 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_487);
+		L_488 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_487);
 		V_57 = L_488;
 		// object hashSet = Activator.CreateInstance(type);
 		Type_t * L_489 = ___type0;
@@ -60250,7 +60250,7 @@ IL_0011:
 		Type_t * L_5 = V_0;
 		NullCheck(L_5);
 		bool L_6;
-		L_6 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericType() */, L_5);
+		L_6 = VirtFuncInvoker0< bool >::Invoke(81 /* System.Boolean System.Type::get_IsGenericType() */, L_5);
 		V_1 = L_6;
 		// if (type == typeof(UnityEngine.GameObject))
 		Type_t * L_7 = V_0;
@@ -60505,7 +60505,7 @@ IL_017a:
 		Type_t * L_73 = V_0;
 		NullCheck(L_73);
 		Type_t * L_74;
-		L_74 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_73);
+		L_74 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_73);
 		V_14 = L_74;
 		// int rank = m_Reader.ReadInt32();
 		BinaryReader_t4F45C15FF44F8E1C105704A21FFBE58D60015128 * L_75 = __this->get_m_Reader_0();
@@ -60805,7 +60805,7 @@ IL_02d2:
 		Type_t * L_150 = V_0;
 		NullCheck(L_150);
 		Type_t * L_151;
-		L_151 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_150);
+		L_151 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_150);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_152 = { reinterpret_cast<intptr_t> (List_1_t2F377D93C74B8090B226DCC307AB5BB600181453_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_153;
@@ -60822,7 +60822,7 @@ IL_02d2:
 		Type_t * L_155 = V_0;
 		NullCheck(L_155);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_156;
-		L_156 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(107 /* System.Type[] System.Type::GetGenericArguments() */, L_155);
+		L_156 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(106 /* System.Type[] System.Type::GetGenericArguments() */, L_155);
 		V_24 = L_156;
 		// IList list = value as IList;
 		RuntimeObject * L_157 = ___value0;
@@ -61251,7 +61251,7 @@ IL_00b1:
 		Type_t * L_42 = V_7;
 		NullCheck(L_42);
 		Type_t * L_43;
-		L_43 = VirtFuncInvoker0< Type_t * >::Invoke(32 /* System.Type System.Type::get_BaseType() */, L_42);
+		L_43 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Type::get_BaseType() */, L_42);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_44 = { reinterpret_cast<intptr_t> (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_45;
@@ -63487,11 +63487,21 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AsyncUniTaskMethodBuilder_1_tE68E
 {
 	AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913  V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913  V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	{
 		// return default;
 		il2cpp_codegen_initobj((&V_0), sizeof(AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 ));
 		AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913  L_0 = V_0;
-		return (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 )L_0;
+		V_1 = (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 )L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		// }
+		AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913  L_1 = V_1;
+		return (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 )L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_Start_TisU3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9_m510EF6FEBF1E618CF446C56B24D83472F0E43BE9_gshared_inline (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 * __this, U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 * ___stateMachine0, const RuntimeMethod* method)
@@ -63512,49 +63522,67 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UniTask_1_tE836249643B9776FC1B139
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UniTask_tB2308A79346AE4017FEA07795B6E0A00C0D30B0F_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
+	UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
 	{
 		// if (runnerPromise != null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// return runnerPromise.Task;
-		RuntimeObject* L_1 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_1);
-		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_2;
-		L_2 = InterfaceFuncInvoker0< UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  >::Invoke(1 /* Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_Task() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_1);
-		return (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_2;
+		RuntimeObject* L_2 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_2);
+		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_3;
+		L_3 = InterfaceFuncInvoker0< UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  >::Invoke(1 /* Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_Task() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_2);
+		V_1 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_3;
+		goto IL_0048;
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// else if (ex != null)
-		Exception_t * L_3 = (Exception_t *)__this->get_ex_1();
-		if (!L_3)
+		Exception_t * L_4 = (Exception_t *)__this->get_ex_1();
+		V_2 = (bool)((!(((RuntimeObject*)(Exception_t *)L_4) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_5 = V_2;
+		if (!L_5)
 		{
-			goto IL_0028;
+			goto IL_0039;
 		}
 	}
 	{
 		// return UniTask.FromException<T>(ex);
-		Exception_t * L_4 = (Exception_t *)__this->get_ex_1();
-		IL2CPP_RUNTIME_CLASS_INIT(UniTask_tB2308A79346AE4017FEA07795B6E0A00C0D30B0F_il2cpp_TypeInfo_var);
-		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_5;
-		L_5 = ((  UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  (*) (Exception_t *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)((Exception_t *)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		return (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_5;
-	}
-
-IL_0028:
-	{
-		// return UniTask.FromResult(result);
-		RuntimeObject * L_6 = (RuntimeObject *)__this->get_result_2();
+		Exception_t * L_6 = (Exception_t *)__this->get_ex_1();
 		IL2CPP_RUNTIME_CLASS_INIT(UniTask_tB2308A79346AE4017FEA07795B6E0A00C0D30B0F_il2cpp_TypeInfo_var);
 		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_7;
-		L_7 = ((  UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  (*) (RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 2)->methodPointer)((RuntimeObject *)L_6, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 2));
-		return (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_7;
+		L_7 = ((  UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  (*) (Exception_t *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1)->methodPointer)((Exception_t *)L_6, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		V_1 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_7;
+		goto IL_0048;
+	}
+
+IL_0039:
+	{
+		// return UniTask.FromResult(result);
+		RuntimeObject * L_8 = (RuntimeObject *)__this->get_result_2();
+		IL2CPP_RUNTIME_CLASS_INIT(UniTask_tB2308A79346AE4017FEA07795B6E0A00C0D30B0F_il2cpp_TypeInfo_var);
+		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_9;
+		L_9 = ((  UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  (*) (RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 2)->methodPointer)((RuntimeObject *)L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		V_1 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_9;
+		goto IL_0048;
+	}
+
+IL_0048:
+	{
+		// }
+		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950  L_10 = V_1;
+		return (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 )L_10;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_Start_TisU3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064_m0DEB07400E85BCA71571B72384802D18931D7E90_gshared_inline (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 * __this, U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 * ___stateMachine0, const RuntimeMethod* method)

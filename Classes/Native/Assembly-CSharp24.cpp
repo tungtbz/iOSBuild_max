@@ -41773,7 +41773,7 @@ IL_00a7:
 				AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_26 = __this->get_reference_2();
 				NullCheck(L_26);
 				AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_27;
-				L_27 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(14 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_26);
+				L_27 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(9 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_26);
 				__this->set_U3CoperationU3E5__3_4(L_27);
 				// await operation.Task;
 				AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE * L_28 = __this->get_address_of_U3CoperationU3E5__3_4();
@@ -42327,7 +42327,7 @@ IL_0076:
 		AssetReference_tEE914DC579E5892CE5B86800656A5AE3DEDC667C * L_18 = __this->get_reference_2();
 		NullCheck(L_18);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_19;
-		L_19 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(14 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_18);
+		L_19 = VirtFuncInvoker0< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  >::Invoke(9 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::UnLoadScene() */, L_18);
 		__this->set_U3CoperationU3E5__3_6(L_19);
 		// yield return operation;
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_20 = __this->get_U3CoperationU3E5__3_6();
@@ -65951,29 +65951,35 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_Se
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = __this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0010;
+			goto IL_0019;
 		}
 	}
 	{
 		// ex = exception;
-		Exception_t * L_1 = ___exception0;
-		__this->set_ex_1(L_1);
-		// }
-		return;
+		Exception_t * L_2 = ___exception0;
+		__this->set_ex_1(L_2);
+		goto IL_0028;
 	}
 
-IL_0010:
+IL_0019:
 	{
 		// runnerPromise.SetException(exception);
-		RuntimeObject* L_2 = __this->get_runnerPromise_0();
-		Exception_t * L_3 = ___exception0;
-		NullCheck(L_2);
-		InterfaceActionInvoker1< Exception_t * >::Invoke(3 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetException(System.Exception) */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, L_2, L_3);
+		RuntimeObject* L_3 = __this->get_runnerPromise_0();
+		Exception_t * L_4 = ___exception0;
+		NullCheck(L_3);
+		InterfaceActionInvoker1< Exception_t * >::Invoke(3 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetException(System.Exception) */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, L_3, L_4);
+	}
+
+IL_0028:
+	{
 		// }
 		return;
 	}
@@ -65986,22 +65992,25 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_Se
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise != null)
 		RuntimeObject* L_0 = __this->get_runnerPromise_0();
-		if (!L_0)
+		V_0 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0013;
+			goto IL_001c;
 		}
 	}
 	{
 		// runnerPromise.SetResult();
-		RuntimeObject* L_1 = __this->get_runnerPromise_0();
-		NullCheck(L_1);
-		InterfaceActionInvoker0::Invoke(2 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetResult() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, L_1);
+		RuntimeObject* L_2 = __this->get_runnerPromise_0();
+		NullCheck(L_2);
+		InterfaceActionInvoker0::Invoke(2 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetResult() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, L_2);
 	}
 
-IL_0013:
+IL_001c:
 	{
 		// }
 		return;
@@ -66327,6 +66336,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ModyEvent_t4C4FB97809EDB9B9DD8DBF
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Awaiter_get_IsCompleted_m9038BD19AF4E2AA4C358B5305B2E6C7B40449446_gshared_inline (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * __this, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// return task.Status.IsCompleted();
 		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_0 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
@@ -66334,7 +66344,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Awaiter_get_IsCompleted_m903
 		L_1 = UniTask_1_get_Status_mF0EB2FE01F6C4C98E11F3607FC0D8B8B0E2262CB_inline((UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)(UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 0));
 		bool L_2;
 		L_2 = UniTaskStatusExtensions_IsCompleted_m8AF9BAB9BC85FE3C4E1DDF155F3D0D572B9A9744_inline((int32_t)L_1, /*hidden argument*/NULL);
-		return (bool)L_2;
+		V_0 = (bool)L_2;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		// }
+		bool L_3 = V_0;
+		return (bool)L_3;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E_TisU3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064_m7423D26B564621B5320348B045FC11A67B0D2C1F_gshared_inline (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 * __this, Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * ___awaiter0, U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 * ___stateMachine1, const RuntimeMethod* method)
@@ -66345,33 +66363,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// AsyncUniTask<TStateMachine, T>.SetStateMachine(ref stateMachine, ref runnerPromise);
-		U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 * L_1 = ___stateMachine1;
-		RuntimeObject** L_2 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
+		U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 * L_2 = ___stateMachine1;
+		RuntimeObject** L_3 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
 		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *)(U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *)L_1, (RuntimeObject**)(RuntimeObject**)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		((  void (*) (U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *)(U3CInstantiateAssetAsyncUU3Ed__10_tCCC9BB1B709826A487DEACF531A657A115772064 *)L_2, (RuntimeObject**)(RuntimeObject**)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// awaiter.UnsafeOnCompleted(runnerPromise.MoveNext);
-		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_3 = ___awaiter0;
-		RuntimeObject* L_4 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_4);
-		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_5;
-		L_5 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_MoveNext() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_4);
-		Il2CppMetadataObject L_6(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
-		const VirtualInvokeData& il2cpp_virtual_invoke_data__38 = il2cpp_codegen_get_interface_invoke_data(0, (&L_6), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
-		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__38.methodPtr)((RuntimeObject*)((RuntimeObject*)L_3)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_5, /*hidden argument*/il2cpp_virtual_invoke_data__38.method);
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_4 = ___awaiter0;
+		RuntimeObject* L_5 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_5);
+		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_6;
+		L_6 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_MoveNext() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_5);
+		Il2CppMetadataObject L_7(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__47 = il2cpp_codegen_get_interface_invoke_data(0, (&L_7), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
+		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__47.methodPtr)((RuntimeObject*)((RuntimeObject*)L_4)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_6, /*hidden argument*/il2cpp_virtual_invoke_data__47.method);
 		// }
 		return;
 	}
@@ -66379,6 +66400,8 @@ IL_0014:
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject * Awaiter_GetResult_mE55CAD33EB8056B607E86003DE3D421726256F8C_gshared_inline (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * __this, const RuntimeMethod* method)
 {
 	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject * V_2 = NULL;
 	{
 		// var s = task.source;
 		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_0 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
@@ -66386,84 +66409,107 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject * Awaiter_GetResult
 		V_0 = (RuntimeObject*)L_1;
 		// if (s == null)
 		RuntimeObject* L_2 = V_0;
-		if (L_2)
+		V_1 = (bool)((((RuntimeObject*)(RuntimeObject*)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_3 = V_1;
+		if (!L_3)
 		{
-			goto IL_001b;
+			goto IL_0024;
 		}
 	}
 	{
 		// return task.result;
-		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_3 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
-		RuntimeObject * L_4 = (RuntimeObject *)L_3->get_result_1();
-		return (RuntimeObject *)L_4;
+		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_4 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
+		RuntimeObject * L_5 = (RuntimeObject *)L_4->get_result_1();
+		V_2 = (RuntimeObject *)L_5;
+		goto IL_0039;
 	}
 
-IL_001b:
+IL_0024:
 	{
 		// return s.GetResult(task.token);
-		RuntimeObject* L_5 = V_0;
-		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_6 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
-		int16_t L_7 = (int16_t)L_6->get_token_2();
-		NullCheck((RuntimeObject*)L_5);
-		RuntimeObject * L_8;
-		L_8 = InterfaceFuncInvoker1< RuntimeObject *, int16_t >::Invoke(0 /* T Cysharp.Threading.Tasks.IUniTaskSource`1<System.Object>::GetResult(System.Int16) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 1), (RuntimeObject*)L_5, (int16_t)L_7);
-		return (RuntimeObject *)L_8;
+		RuntimeObject* L_6 = V_0;
+		UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * L_7 = (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this->get_address_of_task_0();
+		int16_t L_8 = (int16_t)L_7->get_token_2();
+		NullCheck((RuntimeObject*)L_6);
+		RuntimeObject * L_9;
+		L_9 = InterfaceFuncInvoker1< RuntimeObject *, int16_t >::Invoke(0 /* T Cysharp.Threading.Tasks.IUniTaskSource`1<System.Object>::GetResult(System.Int16) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 1), (RuntimeObject*)L_6, (int16_t)L_8);
+		V_2 = (RuntimeObject *)L_9;
+		goto IL_0039;
+	}
+
+IL_0039:
+	{
+		// }
+		RuntimeObject * L_10 = V_2;
+		return (RuntimeObject *)L_10;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_SetException_m76C1E037CF51FFAE571B0176E42A8E460B02D082_gshared_inline (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 * __this, Exception_t * ___exception0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0010;
+			goto IL_0019;
 		}
 	}
 	{
 		// ex = exception;
-		Exception_t * L_1 = ___exception0;
-		__this->set_ex_1(L_1);
-		// }
-		return;
+		Exception_t * L_2 = ___exception0;
+		__this->set_ex_1(L_2);
+		goto IL_0028;
 	}
 
-IL_0010:
+IL_0019:
 	{
 		// runnerPromise.SetException(exception);
-		RuntimeObject* L_2 = (RuntimeObject*)__this->get_runnerPromise_0();
-		Exception_t * L_3 = ___exception0;
-		NullCheck((RuntimeObject*)L_2);
-		InterfaceActionInvoker1< Exception_t * >::Invoke(3 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::SetException(System.Exception) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_2, (Exception_t *)L_3);
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_runnerPromise_0();
+		Exception_t * L_4 = ___exception0;
+		NullCheck((RuntimeObject*)L_3);
+		InterfaceActionInvoker1< Exception_t * >::Invoke(3 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::SetException(System.Exception) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_3, (Exception_t *)L_4);
+	}
+
+IL_0028:
+	{
 		// }
 		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_SetResult_m3416CD1845AD734A51D55B342E5535A854C6CB3E_gshared_inline (AsyncUniTaskMethodBuilder_1_tE68E1B2F0ACAA9F6B43C6A4679CD57283DB5F913 * __this, RuntimeObject * ___result0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0010;
+			goto IL_0019;
 		}
 	}
 	{
 		// this.result = result;
-		RuntimeObject * L_1 = ___result0;
-		__this->set_result_2(L_1);
-		// }
-		return;
+		RuntimeObject * L_2 = ___result0;
+		__this->set_result_2(L_2);
+		goto IL_0028;
 	}
 
-IL_0010:
+IL_0019:
 	{
 		// runnerPromise.SetResult(result);
-		RuntimeObject* L_2 = (RuntimeObject*)__this->get_runnerPromise_0();
-		RuntimeObject * L_3 = ___result0;
-		NullCheck((RuntimeObject*)L_2);
-		InterfaceActionInvoker1< RuntimeObject * >::Invoke(2 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::SetResult(T) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_2, (RuntimeObject *)L_3);
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get_runnerPromise_0();
+		RuntimeObject * L_4 = ___result0;
+		NullCheck((RuntimeObject*)L_3);
+		InterfaceActionInvoker1< RuntimeObject * >::Invoke(2 /* System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::SetResult(T) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_3, (RuntimeObject *)L_4);
+	}
+
+IL_0028:
+	{
 		// }
 		return;
 	}
@@ -66476,33 +66522,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_1_
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// AsyncUniTask<TStateMachine, T>.SetStateMachine(ref stateMachine, ref runnerPromise);
-		U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 * L_1 = ___stateMachine1;
-		RuntimeObject** L_2 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
+		U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 * L_2 = ___stateMachine1;
+		RuntimeObject** L_3 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
 		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *)(U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *)L_1, (RuntimeObject**)(RuntimeObject**)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		((  void (*) (U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *)(U3CLoadAssetAsyncUU3Ed__9_tFF090A3416A42A9DB1D895314D2CC67B8ED180D9 *)L_2, (RuntimeObject**)(RuntimeObject**)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// awaiter.UnsafeOnCompleted(runnerPromise.MoveNext);
-		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_3 = ___awaiter0;
-		RuntimeObject* L_4 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_4);
-		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_5;
-		L_5 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_MoveNext() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_4);
-		Il2CppMetadataObject L_6(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
-		const VirtualInvokeData& il2cpp_virtual_invoke_data__38 = il2cpp_codegen_get_interface_invoke_data(0, (&L_6), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
-		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__38.methodPtr)((RuntimeObject*)((RuntimeObject*)L_3)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_5, /*hidden argument*/il2cpp_virtual_invoke_data__38.method);
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_4 = ___awaiter0;
+		RuntimeObject* L_5 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_5);
+		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_6;
+		L_6 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<System.Object>::get_MoveNext() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0), (RuntimeObject*)L_5);
+		Il2CppMetadataObject L_7(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__47 = il2cpp_codegen_get_interface_invoke_data(0, (&L_7), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
+		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__47.methodPtr)((RuntimeObject*)((RuntimeObject*)L_4)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_6, /*hidden argument*/il2cpp_virtual_invoke_data__47.method);
 		// }
 		return;
 	}
@@ -66547,12 +66596,22 @@ IL_000e:
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E  UniTask_1_GetAwaiter_m3DD34A2A03476AE294981A4BC0A67E81B16846F1_gshared_inline (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * __this, const RuntimeMethod* method)
 {
+	Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// return new Awaiter(this);
 		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E  L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Awaiter__ctor_m983CFC8CEB076156A5F3E4EB2816D640237B1DD7_inline((&L_0), (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)(UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		return (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E )L_0;
+		V_0 = (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E )L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		// }
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E  L_1 = V_0;
+		return (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E )L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_AwaitUnsafeOnCompleted_TisAwaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E_TisU3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73_m4400A96292B3B4FFFE9951ADBD042114D14C6028_gshared_inline (AsyncUniTaskMethodBuilder_t495936A951BCC81F447818FAEFB46EA4E1D243F6 * __this, Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * ___awaiter0, U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 * ___stateMachine1, const RuntimeMethod* method)
@@ -66564,33 +66623,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_Aw
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// AsyncUniTask<TStateMachine>.SetStateMachine(ref stateMachine, ref runnerPromise);
-		U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 * L_1 = ___stateMachine1;
-		RuntimeObject** L_2 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
+		U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 * L_2 = ___stateMachine1;
+		RuntimeObject** L_3 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
 		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *)(U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *)L_1, (RuntimeObject**)(RuntimeObject**)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		((  void (*) (U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *)(U3CInitVideoPlayerU3Ed__63_tC8D535742C6E8A24B7009617547D8064913C6D73 *)L_2, (RuntimeObject**)(RuntimeObject**)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// awaiter.UnsafeOnCompleted(runnerPromise.MoveNext);
-		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_3 = ___awaiter0;
-		RuntimeObject* L_4 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_4);
-		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_5;
-		L_5 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_4);
-		Il2CppMetadataObject L_6(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
-		const VirtualInvokeData& il2cpp_virtual_invoke_data__38 = il2cpp_codegen_get_interface_invoke_data(0, (&L_6), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
-		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__38.methodPtr)((RuntimeObject*)((RuntimeObject*)L_3)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_5, /*hidden argument*/il2cpp_virtual_invoke_data__38.method);
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_4 = ___awaiter0;
+		RuntimeObject* L_5 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_5);
+		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_6;
+		L_6 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_5);
+		Il2CppMetadataObject L_7(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__47 = il2cpp_codegen_get_interface_invoke_data(0, (&L_7), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
+		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__47.methodPtr)((RuntimeObject*)((RuntimeObject*)L_4)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_6, /*hidden argument*/il2cpp_virtual_invoke_data__47.method);
 		// }
 		return;
 	}
@@ -66604,33 +66666,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_Aw
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// AsyncUniTask<TStateMachine>.SetStateMachine(ref stateMachine, ref runnerPromise);
-		U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB * L_1 = ___stateMachine1;
-		RuntimeObject** L_2 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
+		U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB * L_2 = ___stateMachine1;
+		RuntimeObject** L_3 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
 		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *)(U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *)L_1, (RuntimeObject**)(RuntimeObject**)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		((  void (*) (U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *)(U3CLoadSmokeVideosU3Ed__64_tED17CECCED9A3C540BA82DA5AE12F42A31C17ABB *)L_2, (RuntimeObject**)(RuntimeObject**)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// awaiter.UnsafeOnCompleted(runnerPromise.MoveNext);
-		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_3 = ___awaiter0;
-		RuntimeObject* L_4 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_4);
-		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_5;
-		L_5 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_4);
-		Il2CppMetadataObject L_6(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
-		const VirtualInvokeData& il2cpp_virtual_invoke_data__38 = il2cpp_codegen_get_interface_invoke_data(0, (&L_6), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
-		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__38.methodPtr)((RuntimeObject*)((RuntimeObject*)L_3)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_5, /*hidden argument*/il2cpp_virtual_invoke_data__38.method);
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_4 = ___awaiter0;
+		RuntimeObject* L_5 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_5);
+		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_6;
+		L_6 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_5);
+		Il2CppMetadataObject L_7(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__47 = il2cpp_codegen_get_interface_invoke_data(0, (&L_7), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
+		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__47.methodPtr)((RuntimeObject*)((RuntimeObject*)L_4)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_6, /*hidden argument*/il2cpp_virtual_invoke_data__47.method);
 		// }
 		return;
 	}
@@ -66644,33 +66709,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncUniTaskMethodBuilder_Aw
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (runnerPromise == null)
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_runnerPromise_0();
-		if (L_0)
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0014;
+			goto IL_001d;
 		}
 	}
 	{
 		// AsyncUniTask<TStateMachine>.SetStateMachine(ref stateMachine, ref runnerPromise);
-		U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B * L_1 = ___stateMachine1;
-		RuntimeObject** L_2 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
+		U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B * L_2 = ___stateMachine1;
+		RuntimeObject** L_3 = (RuntimeObject**)__this->get_address_of_runnerPromise_0();
 		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *)(U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *)L_1, (RuntimeObject**)(RuntimeObject**)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		((  void (*) (U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *, RuntimeObject**, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *)(U3CSpawnGunU3Ed__90_tDF1E1198E0335A84D3AFC2CF4ED05AECDB277F1B *)L_2, (RuntimeObject**)(RuntimeObject**)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 	}
 
-IL_0014:
+IL_001d:
 	{
 		// awaiter.UnsafeOnCompleted(runnerPromise.MoveNext);
-		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_3 = ___awaiter0;
-		RuntimeObject* L_4 = (RuntimeObject*)__this->get_runnerPromise_0();
-		NullCheck((RuntimeObject*)L_4);
-		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_5;
-		L_5 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_4);
-		Il2CppMetadataObject L_6(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
-		const VirtualInvokeData& il2cpp_virtual_invoke_data__38 = il2cpp_codegen_get_interface_invoke_data(0, (&L_6), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
-		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__38.methodPtr)((RuntimeObject*)((RuntimeObject*)L_3)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_5, /*hidden argument*/il2cpp_virtual_invoke_data__38.method);
+		Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * L_4 = ___awaiter0;
+		RuntimeObject* L_5 = (RuntimeObject*)__this->get_runnerPromise_0();
+		NullCheck((RuntimeObject*)L_5);
+		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_6;
+		L_6 = InterfaceFuncInvoker0< Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * >::Invoke(0 /* System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext() */, IStateMachineRunnerPromise_t61814B32A0DB1B5436EC924DB47F803211FED095_il2cpp_TypeInfo_var, (RuntimeObject*)L_5);
+		Il2CppMetadataObject L_7(IL2CPP_RGCTX_DATA(method->rgctx_data, 2));
+		const VirtualInvokeData& il2cpp_virtual_invoke_data__47 = il2cpp_codegen_get_interface_invoke_data(0, (&L_7), ICriticalNotifyCompletion_t3F4FCEA29CDCACD07747F3A1D6D1406521556838_il2cpp_TypeInfo_var);
+		((  void (*) (RuntimeObject*, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *, const RuntimeMethod*))il2cpp_virtual_invoke_data__47.methodPtr)((RuntimeObject*)((RuntimeObject*)L_4)-1, (Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_6, /*hidden argument*/il2cpp_virtual_invoke_data__47.method);
 		// }
 		return;
 	}
@@ -66735,10 +66803,19 @@ IL_000e:
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool UniTaskStatusExtensions_IsCompleted_m8AF9BAB9BC85FE3C4E1DDF155F3D0D572B9A9744_inline (int32_t ___status0, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// return status != UniTaskStatus.Pending;
 		int32_t L_0 = ___status0;
-		return (bool)((!(((uint32_t)L_0) <= ((uint32_t)0)))? 1 : 0);
+		V_0 = (bool)((!(((uint32_t)L_0) <= ((uint32_t)0)))? 1 : 0);
+		goto IL_0008;
+	}
+
+IL_0008:
+	{
+		// }
+		bool L_1 = V_0;
+		return L_1;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_mF0EB2FE01F6C4C98E11F3607FC0D8B8B0E2262CB_gshared_inline (UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * __this, const RuntimeMethod* method)
@@ -66749,12 +66826,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_mF0E
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUniTaskSource_t3C7FCC9A5D80562DD3C2320BF44FC068A2022AA0_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
 	{
 		// return (source == null) ? UniTaskStatus.Succeeded : source.GetStatus(token);
 		RuntimeObject* L_0 = (RuntimeObject*)__this->get_source_0();
 		if (!L_0)
 		{
-			goto IL_001a;
+			goto IL_001c;
 		}
 	}
 	{
@@ -66763,12 +66842,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UniTask_1_get_Status_mF0E
 		NullCheck((RuntimeObject*)L_1);
 		int32_t L_3;
 		L_3 = InterfaceFuncInvoker1< int32_t, int16_t >::Invoke(0 /* Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.IUniTaskSource::GetStatus(System.Int16) */, IUniTaskSource_t3C7FCC9A5D80562DD3C2320BF44FC068A2022AA0_il2cpp_TypeInfo_var, (RuntimeObject*)L_1, (int16_t)L_2);
-		return (int32_t)L_3;
+		G_B3_0 = ((int32_t)(L_3));
+		goto IL_001d;
 	}
 
-IL_001a:
+IL_001c:
 	{
-		return (int32_t)(1);
+		G_B3_0 = 1;
+	}
+
+IL_001d:
+	{
+		V_0 = (int32_t)G_B3_0;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		// }
+		int32_t L_4 = V_0;
+		return (int32_t)L_4;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Awaiter__ctor_m983CFC8CEB076156A5F3E4EB2816D640237B1DD7_gshared_inline (Awaiter_t83E0B7D20ABAC7B4400B113009380440D17DB31E * __this, UniTask_1_tE836249643B9776FC1B1395D730506D279EDF950 * ___task0, const RuntimeMethod* method)

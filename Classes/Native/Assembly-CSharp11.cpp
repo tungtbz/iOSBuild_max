@@ -8747,7 +8747,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Button_Write_mEA0C77FA39EA4
 		L_19 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_18, /*hidden argument*/NULL);
 		NullCheck(L_19);
 		String_t* L_20;
-		L_20 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_19);
+		L_20 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_19);
 		NullCheck(L_16);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_16, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_20);
 		// writer.WriteProperty ( "targetGraphic", button.targetGraphic );

@@ -21106,7 +21106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Toggle_Write_m53866A1CA8C00
 		L_7 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		String_t* L_8;
-		L_8 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_7);
+		L_8 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_7);
 		NullCheck(L_4);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_4, _stringLiteral538E4293B3E35767BE82A083ACC32FF0B76D8B66, L_8);
 		// writer.WriteProperty ( "graphic", toggle.graphic );
@@ -21183,7 +21183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Toggle_Write_m53866A1CA8C00
 		L_36 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_35, /*hidden argument*/NULL);
 		NullCheck(L_36);
 		String_t* L_37;
-		L_37 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_36);
+		L_37 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_36);
 		NullCheck(L_33);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_33, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_37);
 		// writer.WriteProperty ( "targetGraphic", toggle.targetGraphic );
@@ -28160,7 +28160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Tree_Write_m2904B2276237B92
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		String_t* L_5;
-		L_5 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_4);
+		L_5 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_4);
 		NullCheck(L_1);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_1, _stringLiteralE76852F06C679D87343E3FAA7878CDDC695FB9A4, L_5);
 		// writer.WriteProperty ( "data", tree.data );

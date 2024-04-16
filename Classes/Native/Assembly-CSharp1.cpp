@@ -34494,24 +34494,24 @@ IL_0013:
 		Type_t * L_7 = V_0;
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsEnum() */, L_7);
+		L_8 = VirtFuncInvoker0< bool >::Invoke(77 /* System.Boolean System.Type::get_IsEnum() */, L_7);
 		V_2 = L_8;
 		// isSerializable = type.IsSerializable;
 		Type_t * L_9 = V_0;
 		NullCheck(L_9);
 		bool L_10;
-		L_10 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_9);
+		L_10 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_9);
 		// isGeneric = type.IsGenericType;
 		Type_t * L_11 = V_0;
 		NullCheck(L_11);
 		bool L_12;
-		L_12 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericType() */, L_11);
+		L_12 = VirtFuncInvoker0< bool >::Invoke(81 /* System.Boolean System.Type::get_IsGenericType() */, L_11);
 		V_3 = L_12;
 		// isGenericCollection = type.GetInterfaces().Contains(typeof(ICollection<>));
 		Type_t * L_13 = V_0;
 		NullCheck(L_13);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_14;
-		L_14 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(48 /* System.Type[] System.Type::GetInterfaces() */, L_13);
+		L_14 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(47 /* System.Type[] System.Type::GetInterfaces() */, L_13);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_15 = { reinterpret_cast<intptr_t> (ICollection_1_tEB9B83728C30BC3B050B777DF03B955050A4DDC3_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_16;
@@ -34657,7 +34657,7 @@ IL_0180:
 		L_62 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_61, /*hidden argument*/NULL);
 		NullCheck(L_62);
 		String_t* L_63;
-		L_63 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_62);
+		L_63 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_62);
 		NullCheck(L_57);
 		VirtActionInvoker1< String_t* >::Invoke(24 /* System.Void System.IO.BinaryWriter::Write(System.String) */, L_57, L_63);
 		// Write(components[i]);
@@ -35590,7 +35590,7 @@ IL_0657:
 		L_290 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_289, /*hidden argument*/NULL);
 		NullCheck(L_290);
 		String_t* L_291;
-		L_291 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_290);
+		L_291 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_290);
 		NullCheck(L_288);
 		VirtActionInvoker1< String_t* >::Invoke(24 /* System.Void System.IO.BinaryWriter::Write(System.String) */, L_288, L_291);
 		// Write(entry.Key);
@@ -35606,7 +35606,7 @@ IL_0657:
 		L_295 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_294, /*hidden argument*/NULL);
 		NullCheck(L_295);
 		String_t* L_296;
-		L_296 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_295);
+		L_296 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_295);
 		NullCheck(L_293);
 		VirtActionInvoker1< String_t* >::Invoke(24 /* System.Void System.IO.BinaryWriter::Write(System.String) */, L_293, L_296);
 		// Write(entry.Value);
@@ -35630,7 +35630,7 @@ IL_06c4:
 		Type_t * L_299 = V_0;
 		NullCheck(L_299);
 		Type_t * L_300;
-		L_300 = VirtFuncInvoker0< Type_t * >::Invoke(109 /* System.Type System.Type::GetGenericTypeDefinition() */, L_299);
+		L_300 = VirtFuncInvoker0< Type_t * >::Invoke(108 /* System.Type System.Type::GetGenericTypeDefinition() */, L_299);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_301 = { reinterpret_cast<intptr_t> (KeyValuePair_2_t4451D0958080362C54F19A3F39A254682CE0D1D5_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_302;
@@ -35786,7 +35786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryObjectWriter_WriteObject_m09400074
 		Type_t * L_2 = ___type1;
 		NullCheck(L_2);
 		Type_t * L_3;
-		L_3 = VirtFuncInvoker0< Type_t * >::Invoke(32 /* System.Type System.Type::get_BaseType() */, L_2);
+		L_3 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Type::get_BaseType() */, L_2);
 		NullCheck(L_3);
 		bool L_4;
 		L_4 = Type_get_IsAbstract_mB16DB56FCABF55740019D32C5286F38E30CAA19F(L_3, /*hidden argument*/NULL);
@@ -35801,7 +35801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryObjectWriter_WriteObject_m09400074
 		Type_t * L_6 = ___type1;
 		NullCheck(L_6);
 		String_t* L_7;
-		L_7 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_6);
+		L_7 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_6);
 		NullCheck(L_5);
 		VirtActionInvoker1< String_t* >::Invoke(24 /* System.Void System.IO.BinaryWriter::Write(System.String) */, L_5, L_7);
 	}

@@ -27728,7 +27728,7 @@ inline void MetaModyAction_1__ctor_mB32824D92329268BB3C085961EC4D67F3D455F3A (Me
 	((  void (*) (MetaModyAction_1_t66DB6D414B79C08C5CA109CF20E8E132E5DD805E *, MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A *, String_t*, UnityAction_1_t1D57A412E42144E2DF160C6E55C864944571E54C *, const RuntimeMethod*))MetaModyAction_1__ctor_mB32824D92329268BB3C085961EC4D67F3D455F3A_gshared)(__this, ___behaviour0, ___actionName1, ___callback2, method);
 }
 // TMPro.TMP_Dropdown/DropdownEvent TMPro.TMP_Dropdown::get_onValueChanged()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DropdownEvent_tF21B3928B792416216B527C52F7B87EA44AA7F5A * TMP_Dropdown_get_onValueChanged_mAC1FC13480B7E3442307FA7D76793C4C0F7E188D_inline (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DropdownEvent_tF21B3928B792416216B527C52F7B87EA44AA7F5A * TMP_Dropdown_get_onValueChanged_mAC1FC13480B7E3442307FA7D76793C4C0F7E188D (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Events.UnityAction`1<System.Int32>::.ctor(System.Object,System.IntPtr)
 inline void UnityAction_1__ctor_m595DA2ECB187B2DF951D640BFEBCE02F3F800A3F (UnityAction_1_t5CF46572372725E6225588C466A7AF5C8597AA79 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -27740,7 +27740,7 @@ inline void UnityEvent_1_AddListener_mFCFAC8ACA3F75283268DC2629ADEB5504E8FC0C2 (
 	((  void (*) (UnityEvent_1_tB235B5DAD099AC425DC059D10DEB8B97A35E2BBF *, UnityAction_1_t5CF46572372725E6225588C466A7AF5C8597AA79 *, const RuntimeMethod*))UnityEvent_1_AddListener_mFCFAC8ACA3F75283268DC2629ADEB5504E8FC0C2_gshared)(__this, ___call0, method);
 }
 // System.Int32 TMPro.TMP_Dropdown::get_value()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1_inline (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1 (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method);
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411 (int32_t* __this, const RuntimeMethod* method);
 // System.String System.String::Concat(System.String,System.String)
@@ -29601,7 +29601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropdownTime_Start_mB536B2A853D6B814FE2B
 		TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_0 = __this->get_mP_Dropdown_4();
 		NullCheck(L_0);
 		DropdownEvent_tF21B3928B792416216B527C52F7B87EA44AA7F5A * L_1;
-		L_1 = TMP_Dropdown_get_onValueChanged_mAC1FC13480B7E3442307FA7D76793C4C0F7E188D_inline(L_0, /*hidden argument*/NULL);
+		L_1 = TMP_Dropdown_get_onValueChanged_mAC1FC13480B7E3442307FA7D76793C4C0F7E188D(L_0, /*hidden argument*/NULL);
 		UnityAction_1_t5CF46572372725E6225588C466A7AF5C8597AA79 * L_2 = (UnityAction_1_t5CF46572372725E6225588C466A7AF5C8597AA79 *)il2cpp_codegen_object_new(UnityAction_1_t5CF46572372725E6225588C466A7AF5C8597AA79_il2cpp_TypeInfo_var);
 		UnityAction_1__ctor_m595DA2ECB187B2DF951D640BFEBCE02F3F800A3F(L_2, __this, (intptr_t)((intptr_t)DropdownTime_U3CStartU3Eb__1_0_mF6D2DC8BFE06707578D785879A65640D453AE6EC_RuntimeMethod_var), /*hidden argument*/UnityAction_1__ctor_m595DA2ECB187B2DF951D640BFEBCE02F3F800A3F_RuntimeMethod_var);
 		NullCheck(L_1);
@@ -29626,7 +29626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropdownTime_DropdownValueChanged_mBA263
 		TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * L_0 = ___mP_Dropdown0;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1_inline(L_0, /*hidden argument*/NULL);
+		L_1 = TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1(L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		String_t* L_2;
 		L_2 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
@@ -53236,22 +53236,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ServiceLocator_t16B7B1E6C190DD32D
 		// get { return _instance; }
 		IL2CPP_RUNTIME_CLASS_INIT(ServiceLocator_t16B7B1E6C190DD32DFC53DE61C83F9D0D1CCB086_il2cpp_TypeInfo_var);
 		ServiceLocator_t16B7B1E6C190DD32DFC53DE61C83F9D0D1CCB086 * L_0 = ((ServiceLocator_t16B7B1E6C190DD32DFC53DE61C83F9D0D1CCB086_StaticFields*)il2cpp_codegen_static_fields_for(ServiceLocator_t16B7B1E6C190DD32DFC53DE61C83F9D0D1CCB086_il2cpp_TypeInfo_var))->get__instance_1();
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DropdownEvent_tF21B3928B792416216B527C52F7B87EA44AA7F5A * TMP_Dropdown_get_onValueChanged_mAC1FC13480B7E3442307FA7D76793C4C0F7E188D_inline (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method)
-{
-	{
-		// public DropdownEvent onValueChanged { get { return m_OnValueChanged; } set { m_OnValueChanged = value; } }
-		DropdownEvent_tF21B3928B792416216B527C52F7B87EA44AA7F5A * L_0 = __this->get_m_OnValueChanged_28();
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1_inline (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method)
-{
-	{
-		// return m_Value;
-		int32_t L_0 = __this->get_m_Value_26();
 		return L_0;
 	}
 }

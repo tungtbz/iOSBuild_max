@@ -46,20 +46,8 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     
     if(_isWarmUped) return;
     isAATFlowFinished = false;
-    isRemoteConfigFetched = false;
-    __weak __typeof__(self) weakSelf = self;
     
-    [[DevicesFeatures sharedObject] requestATT:^(BOOL granted) {
-        NSLog(@"XXX AAT Finish");
-        __strong __typeof__(self) strongSelf = weakSelf;
-        
-        if (!strongSelf) {
-          return;
-        }
-        [[DevicesFeatures sharedObject] requestNotification:^(BOOL granted) {
-            isAATFlowFinished =  true;
-        }];
-    }];
+    isRemoteConfigFetched = false;
     
     [self loadLocalCache];
     
@@ -73,20 +61,40 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     _isWarmUped = YES;
 }
 
+-(void)requestATT{
+    NSLog(@"XXX requestATT");
+    __weak __typeof__(self) weakSelf = self;
+    
+    [[DevicesFeatures sharedObject] requestATT:^(BOOL granted) {
+        NSLog(@"XXX AAT Finish");
+        __strong __typeof__(self) strongSelf = weakSelf;
+        
+        if (!strongSelf) {
+          return;
+        }
+        [[DevicesFeatures sharedObject] requestNotification:^(BOOL granted) {
+            isAATFlowFinished =  true;
+        }];
+    }];
+}
+
 -(void) startTick{
 
 }
 
 -(void)onTick{
-    if(!isAATFlowFinished) return;
     NSLog(@"XXX onTick");
     
+    int internetStatus = [[DevicesFeatures sharedObject] internetStatus];
+    
     currentTick += 1;
+    if(internetStatus == 0) return;
+    
     if(!isRunConsentFlow && currentTick >= 3){
         [self runConsentFlow];
     }
     
-    if(!isRunConsentFlow && [[DevicesFeatures sharedObject] internetStatus] != 0){
+    if(!isRunConsentFlow && internetStatus != 0){
         [self runConsentFlow];
     }
 }
@@ -102,9 +110,11 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     isRunConsentFlow = true;
     
     if(![[DevicesFeatures sharedObject] isOnline]){
-        [GoogleMobileAdsConsentManager.sharedInstance byPassConsentForm];
         NSLog(@"XXX runConsentFlow 1");
+        
+        [GoogleMobileAdsConsentManager.sharedInstance byPassConsentForm];
         [self InitAdsService];
+        [self requestATT];
     }else{
         __weak __typeof__(self) weakSelf = self;
         [GoogleMobileAdsConsentManager.sharedInstance gatherConsentFromConsentPresentationViewController:^(NSError * _Nullable error) {
@@ -122,10 +132,11 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
             
             NSLog(@"XXX runConsentFlow 2");
             [strongSelf InitAdsService];
+            [strongSelf requestATT];
             
             if (GoogleMobileAdsConsentManager.sharedInstance.canRequestAds) {
-                                                [strongSelf startGoogleMobileAdsSDK];
-                                              }
+                [strongSelf startGoogleMobileAdsSDK];
+            }
         }];
     }
     
@@ -192,6 +203,10 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
 
 -(BOOL)IsRemoteConfigFetched{
     return isRemoteConfigFetched;
+}
+
+-(BOOL)IsATTFlowFinished{
+    return isAATFlowFinished;
 }
 
 -(int)consentCode{
@@ -501,6 +516,10 @@ extern "C" {
         }
         //case co UMP
         return [[GoogleMobileAdsConsentManager sharedInstance ] canRequestAds];
+    }
+    
+    bool _IsATTFlowFinished(){
+        return [[rofisdk sharedObject] IsATTFlowFinished];
     }
     
     bool _IsRemoteConfigReady(){

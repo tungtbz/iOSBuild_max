@@ -23794,7 +23794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginPopup_InitUi_mC628DC1E8DCEA8B4A8FD7
 // System.Void TMPro.TMP_InputField::set_contentType(TMPro.TMP_InputField/ContentType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_InputField_set_contentType_mBE58287752B1C37E33719651BE77AB6BF8903CC7 (TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * __this, int32_t ___value0, const RuntimeMethod* method);
 // UnityEngine.UI.Graphic TMPro.TMP_InputField::get_placeholder()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA_inline (TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA (TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mDCB4E958808E725D0612CCABF340B284085F03D6 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::.ctor()
@@ -25475,7 +25475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginPopup_InitUi_mC628DC1E8DCEA8B4A8FD7
 		TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * L_1 = __this->get_usernameTextField_4();
 		NullCheck(L_1);
 		Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * L_2;
-		L_2 = TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA_inline(L_1, /*hidden argument*/NULL);
+		L_2 = TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA(L_1, /*hidden argument*/NULL);
 		V_0 = ((TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262 *)IsInstClass((RuntimeObject*)L_2, TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262_il2cpp_TypeInfo_var));
 		// if (placeholderTextComponent != null) placeholderTextComponent.text = "Enter username or email";
 		TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262 * L_3 = V_0;
@@ -25504,7 +25504,7 @@ IL_0031:
 		TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * L_7 = __this->get_passwordTextField_5();
 		NullCheck(L_7);
 		Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * L_8;
-		L_8 = TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA_inline(L_7, /*hidden argument*/NULL);
+		L_8 = TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA(L_7, /*hidden argument*/NULL);
 		V_0 = ((TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262 *)IsInstClass((RuntimeObject*)L_8, TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262_il2cpp_TypeInfo_var));
 		// if (placeholderTextComponent != null) placeholderTextComponent.text = "Enter Password";
 		TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262 * L_9 = V_0;
@@ -48999,14 +48999,6 @@ IL_0085:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * TMP_InputField_get_placeholder_m6993CEB133CF120AB643A92C3C6F7B2A189175FA_inline (TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * __this, const RuntimeMethod* method)
-{
-	{
-		// public Graphic placeholder { get { return m_Placeholder; } set { SetPropertyUtility.SetClass(ref m_Placeholder, value); } }
-		Graphic_tF07D777035055CF93BA5F46F77ED5EDFEFF9AE24 * L_0 = __this->get_m_Placeholder_29();
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UIBehaviours_t96C6144F50A2F0C705DAC9C6CEA457CA6ABED0F5 * UISelectable_get_behaviours_m0677D172E433D789969148A46FEFB05E9836963D_inline (UISelectable_t4319EBA1B5E9B1D986708D0D722A6F24731163C4 * __this, const RuntimeMethod* method)
 {
 	{

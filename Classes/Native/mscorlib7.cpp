@@ -17886,14 +17886,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GuidAttribute__ctor_mCCEF3938DF601B23B57
 		return;
 	}
 }
-// System.String System.Runtime.InteropServices.GuidAttribute::get_Value()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GuidAttribute_get_Value_m75D29C133FB159C9564CB09298D237E2A077AC0B (GuidAttribute_tBB494B31270577CCD589ABBB159C18CDAE20D063 * __this, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = __this->get__val_0();
-		return L_0;
-	}
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -32539,7 +32531,7 @@ CATCH_0013:
 		L_1 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(__this, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_1);
+		L_2 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_1);
 		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_3 = V_0;
 		TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8 * L_4 = (TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8_il2cpp_TypeInfo_var)));
 		TypeInitializationException__ctor_mC09699699FB8A4F28AADA5C63848ECB3F87E2FB5(L_4, L_2, L_3, /*hidden argument*/NULL);
@@ -41008,7 +41000,7 @@ IL_0018:
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		bool L_5;
-		L_5 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
+		L_5 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
 		if (L_5)
 		{
 			goto IL_003a;
@@ -41037,7 +41029,7 @@ IL_003a:
 		L_10 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
+		L_11 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
 		if (L_11)
 		{
 			goto IL_005f;
@@ -41273,7 +41265,7 @@ IL_0018:
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		bool L_5;
-		L_5 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
+		L_5 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
 		if (L_5)
 		{
 			goto IL_003a;
@@ -41302,7 +41294,7 @@ IL_003a:
 		L_10 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtFuncInvoker0< bool >::Invoke(79 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
+		L_11 = VirtFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
 		if (L_11)
 		{
 			goto IL_005f;

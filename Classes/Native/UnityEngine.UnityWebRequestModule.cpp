@@ -237,7 +237,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2D237ADC0A2A1323199D8ECEAF721FC4EA117317
 IL2CPP_EXTERN_C String_t* _stringLiteral333AFA041DE8E9D54728A1EA405FBCB141FC3A86;
 IL2CPP_EXTERN_C String_t* _stringLiteral350138951CA76BFC65A77EA2D223A8D476B10BC5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3781CFEEF925855A4B7284E1783A7D715A6333F6;
-IL2CPP_EXTERN_C String_t* _stringLiteral3D044A7A6F29E9BA262A4F406F47BBD4745F4B4F;
 IL2CPP_EXTERN_C String_t* _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B0CEF65E50AE46EF4878CC1DD83FF8B5ED020EA;
 IL2CPP_EXTERN_C String_t* _stringLiteral56B70A227BDF525F3B35BE8F7F19C2510184DC02;
@@ -300,7 +299,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_InternalSetCustomMethod_mD7
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_InternalSetMethod_mBBFC08EEC7A4A7F9DC510AEB10D5103475C6B4EB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_InternalSetUrl_mE850CF14CE4F5EE57063771AC9B0C686C4856F25_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_SetRequestHeader_m5ED4EFBACC106390DF5D81D19E4D4D9D59F13EFB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_set_certificateHandler_mBB6DDBB83B2639B1D47EFCDDDCC56E1217D139F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_set_chunkedTransfer_mA743E172FDB5D5892DD6D3AA6836B66CD6233B5B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_set_downloadHandler_m7496D2C5F755BEB68651A4F33EA9BDA319D092C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityWebRequest_set_method_m603E0D94414F046DE2A60E127A715B3303F46AA7_RuntimeMethod_var;
@@ -3891,8 +3889,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UnityWebRequest_IsExecuting_m6666F152821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UnityWebRequest_get_isDone_mF8C92D10767B80877BCFE6D119CBE9090ACCDFBD (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.Networking.UnityWebRequest::GetDownloadProgress()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float UnityWebRequest_GetDownloadProgress_mC606595011ACB62AF71EBA355A28CB91095DD031 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Networking.UnityWebRequest::SetRedirectLimitFromScripting(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, int32_t ___limit0, const RuntimeMethod* method);
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetChunked(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetChunked_m173E726FCC4BF15CCC70BE65C66FAD0DCA58AC57 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, bool ___chunked0, const RuntimeMethod* method);
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::InternalSetRequestHeader(System.String,System.String)
@@ -3917,8 +3913,6 @@ inline void Dictionary_2_Add_mE0EF428186E444BFEAD18AC6810D423EEABB3F92 (Dictiona
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetUploadHandler_mDDEF10B06EF15A1B826F3402D786FA5E2B7B16BE (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, UploadHandler_t5F80A2A6874D4D330751BE3524009C21C9B74BDA * ___uh0, const RuntimeMethod* method);
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetDownloadHandler(UnityEngine.Networking.DownloadHandler)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetDownloadHandler_m2B4503FF83DB5348F5ADCC8F23144414429BD36A (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, DownloadHandler_tEEAE0DD53DB497C8A491C4F7B7A14C3CA027B1DB * ___dh0, const RuntimeMethod* method);
-// UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetCertificateHandler(UnityEngine.Networking.CertificateHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * ___ch0, const RuntimeMethod* method);
 // System.Int32 System.Math::Max(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_m709673BDF5D9264E61FEBBC4CE1038752523838D (int32_t ___val10, int32_t ___val21, const RuntimeMethod* method);
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetTimeoutMsec(System.Int32)
@@ -6012,34 +6006,6 @@ IL_002a:
 		return L_4;
 	}
 }
-// System.UInt64 UnityEngine.Networking.UnityWebRequest::get_downloadedBytes()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t UnityWebRequest_get_downloadedBytes_mD4AF34C3D78C4BBD477B90246CBB33F99757A922 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method)
-{
-	typedef uint64_t (*UnityWebRequest_get_downloadedBytes_mD4AF34C3D78C4BBD477B90246CBB33F99757A922_ftn) (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E *);
-	static UnityWebRequest_get_downloadedBytes_mD4AF34C3D78C4BBD477B90246CBB33F99757A922_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (UnityWebRequest_get_downloadedBytes_mD4AF34C3D78C4BBD477B90246CBB33F99757A922_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Networking.UnityWebRequest::get_downloadedBytes()");
-	uint64_t icallRetVal = _il2cpp_icall_func(__this);
-	return icallRetVal;
-}
-// System.Void UnityEngine.Networking.UnityWebRequest::SetRedirectLimitFromScripting(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, int32_t ___limit0, const RuntimeMethod* method)
-{
-	typedef void (*UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40_ftn) (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E *, int32_t);
-	static UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Networking.UnityWebRequest::SetRedirectLimitFromScripting(System.Int32)");
-	_il2cpp_icall_func(__this, ___limit0);
-}
-// System.Void UnityEngine.Networking.UnityWebRequest::set_redirectLimit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityWebRequest_set_redirectLimit_m681BBDC39CBAC87A7A0F57C0E27F8C5673F4A7C5 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___value0;
-		UnityWebRequest_SetRedirectLimitFromScripting_mDE3DEF4DE4D14821E557248F82CDEA0BC8B66A40(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetChunked(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetChunked_m173E726FCC4BF15CCC70BE65C66FAD0DCA58AC57 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, bool ___chunked0, const RuntimeMethod* method)
 {
@@ -6490,16 +6456,6 @@ IL_0035:
 		return;
 	}
 }
-// UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetCertificateHandler(UnityEngine.Networking.CertificateHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * ___ch0, const RuntimeMethod* method)
-{
-	typedef int32_t (*UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2_ftn) (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E *, CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E *);
-	static UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Networking.UnityWebRequest::SetCertificateHandler(UnityEngine.Networking.CertificateHandler)");
-	int32_t icallRetVal = _il2cpp_icall_func(__this, ___ch0);
-	return icallRetVal;
-}
 // UnityEngine.Networking.CertificateHandler UnityEngine.Networking.UnityWebRequest::get_certificateHandler()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * UnityWebRequest_get_certificateHandler_mACA97B9158F17FFBEF489753C6E42302EEDF057D (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, const RuntimeMethod* method)
 {
@@ -6514,58 +6470,6 @@ IL_000a:
 	{
 		CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * L_1 = V_0;
 		return L_1;
-	}
-}
-// System.Void UnityEngine.Networking.UnityWebRequest::set_certificateHandler(UnityEngine.Networking.CertificateHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityWebRequest_set_certificateHandler_mBB6DDBB83B2639B1D47EFCDDDCC56E1217D139F7 (UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * __this, CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * ___value0, const RuntimeMethod* method)
-{
-	int32_t V_0 = 0;
-	bool V_1 = false;
-	bool V_2 = false;
-	{
-		bool L_0;
-		L_0 = UnityWebRequest_get_isModifiable_m5B9DC48172A00D5268B02F36AB4A9A0DFB38AD3A(__this, /*hidden argument*/NULL);
-		V_1 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_1;
-		if (!L_1)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_2 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
-		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3D044A7A6F29E9BA262A4F406F47BBD4745F4B4F)), /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UnityWebRequest_set_certificateHandler_mBB6DDBB83B2639B1D47EFCDDDCC56E1217D139F7_RuntimeMethod_var)));
-	}
-
-IL_0019:
-	{
-		CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * L_3 = ___value0;
-		int32_t L_4;
-		L_4 = UnityWebRequest_SetCertificateHandler_m4A4C27BF1D012FF32475E2810EDB6DA0F471F5A2(__this, L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		int32_t L_5 = V_0;
-		V_2 = (bool)((!(((uint32_t)L_5) <= ((uint32_t)0)))? 1 : 0);
-		bool L_6 = V_2;
-		if (!L_6)
-		{
-			goto IL_0035;
-		}
-	}
-	{
-		int32_t L_7 = V_0;
-		String_t* L_8;
-		L_8 = UnityWebRequest_GetWebErrorString_mA6003EB48A585B0F975B1545252DE3719F89761D(L_7, /*hidden argument*/NULL);
-		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_9 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
-		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_9, L_8, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UnityWebRequest_set_certificateHandler_mBB6DDBB83B2639B1D47EFCDDDCC56E1217D139F7_RuntimeMethod_var)));
-	}
-
-IL_0035:
-	{
-		CertificateHandler_tDA66C86D1302CE4266DBB078361F7A363C7B005E * L_10 = ___value0;
-		__this->set_m_CertificateHandler_3(L_10);
-		return;
 	}
 }
 // UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetTimeoutMsec(System.Int32)

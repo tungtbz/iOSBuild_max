@@ -50,17 +50,17 @@ static Il2CppMethodPointer s_methodPointers[11] =
 };
 static const int32_t s_InvokerIndices[11] = 
 {
-	12340,
-	12974,
-	12092,
-	12974,
-	10932,
-	13185,
-	11865,
-	12520,
-	13185,
-	10932,
-	13142,
+	12080,
+	12708,
+	11843,
+	12708,
+	10724,
+	12915,
+	11626,
+	12256,
+	12915,
+	10724,
+	12872,
 };
 extern const CustomAttributesCacheGenerator g_Logger_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Logger_CodeGenModule;

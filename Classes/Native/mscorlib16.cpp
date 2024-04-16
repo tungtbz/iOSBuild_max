@@ -19728,7 +19728,7 @@ CATCH_0013:
 		L_1 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(__this, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_1);
+		L_2 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_1);
 		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_3 = V_0;
 		TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8 * L_4 = (TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TypeInitializationException_tFBB52C455ED2509387E598E8C0877D464B6EC7B8_il2cpp_TypeInfo_var)));
 		TypeInitializationException__ctor_mC09699699FB8A4F28AADA5C63848ECB3F87E2FB5(L_4, L_2, L_3, /*hidden argument*/NULL);

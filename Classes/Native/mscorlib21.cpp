@@ -21466,7 +21466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DelegateEntry__ctor_m53691833E2804A7E078
 		L_1 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_1);
+		L_2 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_1);
 		__this->set_type_0(L_2);
 		Delegate_t * L_3 = ___del0;
 		NullCheck(L_3);
@@ -21474,7 +21474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DelegateEntry__ctor_m53691833E2804A7E078
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		Assembly_t * L_5;
-		L_5 = VirtFuncInvoker0< Assembly_t * >::Invoke(26 /* System.Reflection.Assembly System.Type::get_Assembly() */, L_4);
+		L_5 = VirtFuncInvoker0< Assembly_t * >::Invoke(25 /* System.Reflection.Assembly System.Type::get_Assembly() */, L_4);
 		NullCheck(L_5);
 		String_t* L_6;
 		L_6 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.Assembly::get_FullName() */, L_5);
@@ -21490,7 +21490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DelegateEntry__ctor_m53691833E2804A7E078
 		L_10 = VirtFuncInvoker0< Type_t * >::Invoke(8 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_9);
 		NullCheck(L_10);
 		Assembly_t * L_11;
-		L_11 = VirtFuncInvoker0< Assembly_t * >::Invoke(26 /* System.Reflection.Assembly System.Type::get_Assembly() */, L_10);
+		L_11 = VirtFuncInvoker0< Assembly_t * >::Invoke(25 /* System.Reflection.Assembly System.Type::get_Assembly() */, L_10);
 		NullCheck(L_11);
 		String_t* L_12;
 		L_12 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.Assembly::get_FullName() */, L_11);
@@ -21504,7 +21504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DelegateEntry__ctor_m53691833E2804A7E078
 		L_15 = VirtFuncInvoker0< Type_t * >::Invoke(8 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_14);
 		NullCheck(L_15);
 		String_t* L_16;
-		L_16 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_15);
+		L_16 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_15);
 		__this->set_targetTypeName_4(L_16);
 		Delegate_t * L_17 = ___del0;
 		NullCheck(L_17);

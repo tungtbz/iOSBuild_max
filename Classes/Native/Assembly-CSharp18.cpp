@@ -53107,7 +53107,7 @@ IL_0014:
 		Type_t * L_4 = ___messageType1;
 		NullCheck(L_3);
 		bool L_5;
-		L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(119 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_3, L_4);
+		L_5 = VirtFuncInvoker1< bool, Type_t * >::Invoke(118 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_3, L_4);
 		if (L_5)
 		{
 			goto IL_0031;

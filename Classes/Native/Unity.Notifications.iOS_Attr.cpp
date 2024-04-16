@@ -24,6 +24,8 @@ struct CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF
 struct CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C;
 // System.Diagnostics.DebuggableAttribute
 struct DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B;
+// System.Diagnostics.DebuggerBrowsableAttribute
+struct DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53;
 // Microsoft.CodeAnalysis.EmbeddedAttribute
 struct EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569;
 // System.FlagsAttribute
@@ -401,6 +403,24 @@ public:
 };
 
 
+// System.Diagnostics.DebuggerBrowsableState
+struct DebuggerBrowsableState_t2A824ECEB650CFABB239FD0918FCC88A09B45091 
+{
+public:
+	// System.Int32 System.Diagnostics.DebuggerBrowsableState::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DebuggerBrowsableState_t2A824ECEB650CFABB239FD0918FCC88A09B45091, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // System.RuntimeTypeHandle
 struct RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9 
 {
@@ -451,6 +471,24 @@ public:
 	inline void set_m_debuggingModes_0(int32_t value)
 	{
 		___m_debuggingModes_0 = value;
+	}
+};
+
+
+// System.Diagnostics.DebuggerBrowsableAttribute
+struct DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+	// System.Diagnostics.DebuggerBrowsableState System.Diagnostics.DebuggerBrowsableAttribute::state
+	int32_t ___state_0;
+
+public:
+	inline static int32_t get_offset_of_state_0() { return static_cast<int32_t>(offsetof(DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53, ___state_0)); }
+	inline int32_t get_state_0() const { return ___state_0; }
+	inline int32_t* get_address_of_state_0() { return &___state_0; }
+	inline void set_state_0(int32_t value)
+	{
+		___state_0 = value;
 	}
 };
 
@@ -576,6 +614,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilerGeneratedAttribute__ctor_m9DC3E4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m1B7389133A43D709FB46E5D6243953A1D14CFBD5 (EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569 * __this, const RuntimeMethod* method);
 // System.Void System.FlagsAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlagsAttribute__ctor_mE8DCBA1BE0E6B0424FEF5E5F249733CF6A0E1229 (FlagsAttribute_t511C558FACEF1CC64702A8FAB67CAF3CBA65DF36 * __this, const RuntimeMethod* method);
+// System.Void System.Diagnostics.DebuggerBrowsableAttribute::.ctor(System.Diagnostics.DebuggerBrowsableState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5 (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * __this, int32_t ___state0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031 (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * __this, const RuntimeMethod* method);
 // System.Void AOT.MonoPInvokeCallbackAttribute::.ctor(System.Type)
@@ -588,7 +628,7 @@ static void Unity_Notifications_iOS_CustomAttributesCacheGenerator(CustomAttribu
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[1];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
 	}
 	{
 		RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * tmp = (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 *)cache->attributes[2];
@@ -618,12 +658,12 @@ static void EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569_CustomAt
 static void IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569 * tmp = (EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569 *)cache->attributes[0];
+		EmbeddedAttribute__ctor_m1B7389133A43D709FB46E5D6243953A1D14CFBD5(tmp, NULL);
 	}
 	{
-		EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569 * tmp = (EmbeddedAttribute_tB2FAC817877BBE79BED6B020ABD5B9B1E4CD4569 *)cache->attributes[1];
-		EmbeddedAttribute__ctor_m1B7389133A43D709FB46E5D6243953A1D14CFBD5(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void PresentationOption_t467B22F0F0ADD6BFC2DAFE468B6858EC2D8BBC0D_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -639,11 +679,19 @@ static void iOSNotification_tA82BF3083789F3680FAB0B1C45535685643D8D25_CustomAttr
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotification_tA82BF3083789F3680FAB0B1C45535685643D8D25_CustomAttributesCacheGenerator_U3CAttachmentsU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
@@ -678,14 +726,22 @@ static void iOSNotificationActionOptions_t04FA081F38565E76BA930821BD06B51CE3A84F
 static void iOSNotificationAction_t4C133E06D54C4D706ACC5E370AC8C3B2EE4D1729_CustomAttributesCacheGenerator_U3CIdU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationAction_t4C133E06D54C4D706ACC5E370AC8C3B2EE4D1729_CustomAttributesCacheGenerator_U3CTitleU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
@@ -694,6 +750,10 @@ static void iOSNotificationAction_t4C133E06D54C4D706ACC5E370AC8C3B2EE4D1729_Cust
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationAction_t4C133E06D54C4D706ACC5E370AC8C3B2EE4D1729_CustomAttributesCacheGenerator_iOSNotificationAction_get_Id_m8FFEE9A273939945116A9818B267022F9AB64C9A(CustomAttributesCache* cache)
@@ -720,7 +780,11 @@ static void iOSNotificationAction_t4C133E06D54C4D706ACC5E370AC8C3B2EE4D1729_Cust
 static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_CustomAttributesCacheGenerator_U3CIdU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
@@ -729,6 +793,10 @@ static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_CustomAttributesCacheGenerator_iOSNotificationAttachment_get_Id_m1B8437D2A337B7215D3A6C6BAF175A9ADA45253D(CustomAttributesCache* cache)
@@ -752,12 +820,12 @@ static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_
 static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_CustomAttributesCacheGenerator_iOSNotificationAttachment_get_Url_m35E1E10007413B9CFFE9758836D0BB06BB50D438(CustomAttributesCache* cache)
 {
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 }
 static void iOSNotificationAttachment_t37A4471D31A1C86B709282DEBE801B4C154B6469_CustomAttributesCacheGenerator_iOSNotificationAttachment_set_Url_m18CC8994CE416B9CECC819391B4A3C3ADF91FDDD(CustomAttributesCache* cache)
@@ -780,12 +848,20 @@ static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_Cu
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_CustomAttributesCacheGenerator_U3CHiddenPreviewsBodyPlaceholderU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_CustomAttributesCacheGenerator_U3CSummaryFormatU3Ek__BackingField(CustomAttributesCache* cache)
@@ -794,12 +870,20 @@ static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_Cu
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_CustomAttributesCacheGenerator_U3COptionsU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationCategory_t1884E625CE485737DA3685D7C9629208D2ACF01F_CustomAttributesCacheGenerator_iOSNotificationCategory_get_Id_m4D902EFBB02F9DCD93D9CB24F8436DEB8BB28911(CustomAttributesCache* cache)
@@ -836,12 +920,20 @@ static void iOSNotificationCenter_t19261B260216D8DDD9A7C7A3A0F7A7AF2D317008_Cust
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCenter_t19261B260216D8DDD9A7C7A3A0F7A7AF2D317008_CustomAttributesCacheGenerator_s_OnRemoteNotificationReceived(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void U3CU3Ec_t7E1C97E9D901D787223BBFE3F53DD077FC511F0C_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -854,35 +946,55 @@ static void U3CU3Ec_t7E1C97E9D901D787223BBFE3F53DD077FC511F0C_CustomAttributesCa
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_U3CLatitudeU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_U3CLongitudeU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_U3CRadiusU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_U3CNotifyOnEntryU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_U3CNotifyOnExitU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
@@ -892,16 +1004,20 @@ static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_Latitude_m7FF6B3D8921E629467073919B8FE637C676306F6(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_Longitude_m40A4E5D82529580699BBB7D0D399FE483F347372(CustomAttributesCache* cache)
@@ -918,12 +1034,12 @@ static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_Radius_mD267EADF32C368187283E4B768C9EDF341B35E8F(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_NotifyOnEntry_mC842CDA7A8BE02A586FCE22413756402AE40C66A(CustomAttributesCache* cache)
@@ -940,12 +1056,12 @@ static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_NotifyOnExit_mF117ACA5EAD44C39991624CA17B5909508776A98(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationLocationTrigger_tC912C09CB8B026472349F3A4FBA914C9C087E605_CustomAttributesCacheGenerator_iOSNotificationLocationTrigger_get_Repeats_m38C493F8C90E10EEA49F87B65452D8DB21EA6B42(CustomAttributesCache* cache)
@@ -965,6 +1081,10 @@ static void iOSNotificationTimeIntervalTrigger_t3EB6EB1F850230D9870E4D64477CF816
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationTimeIntervalTrigger_t3EB6EB1F850230D9870E4D64477CF816275B8923_CustomAttributesCacheGenerator_iOSNotificationTimeIntervalTrigger_get_Repeats_m48972F26AAE37EAE2D337E87AEBC4DE40987626F(CustomAttributesCache* cache)
 {
@@ -983,11 +1103,19 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CMonthU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
@@ -997,12 +1125,20 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CHourU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CMinuteU3Ek__BackingField(CustomAttributesCache* cache)
@@ -1011,12 +1147,20 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CSecondU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CUtcTimeU3Ek__BackingField(CustomAttributesCache* cache)
@@ -1025,12 +1169,20 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_U3CRepeatsU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_Year_m8A0F301185923E277357D4EEE554EE673E1660C3(CustomAttributesCache* cache)
@@ -1090,12 +1242,12 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_Hour_mA4304F009A3F9CA93B9715AE5D3BAB81E5045FB6(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_set_Hour_m2CBC30DBB39E7242C46EF9C0768B8082E6A41A11(CustomAttributesCache* cache)
@@ -1108,12 +1260,12 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_Minute_mD045386C9F63AC301048D5C2EBF479DD25C64397(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_set_Minute_mAAEA2870CAEDB70DED3269CDE1BA05887380DDD1(CustomAttributesCache* cache)
@@ -1126,12 +1278,12 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_Second_m6EE7FF71AEA66769586E8559C2E7A11B2EC47E99(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_set_Second_mD3512EC69850049A146489592559FF0746674365(CustomAttributesCache* cache)
@@ -1144,12 +1296,12 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_UtcTime_m6D6EF46252C6198BB8379365E943A25D89616A69(CustomAttributesCache* cache)
 {
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_set_UtcTime_m2BE645F9E24579A5CC2DF05AD4279937FA647C8E(CustomAttributesCache* cache)
@@ -1162,12 +1314,12 @@ static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A089
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_get_Repeats_mE736C71557A7C086738EBD56C6D1936CE4200B34(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[0];
+		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
 	}
 	{
-		IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 * tmp = (IsReadOnlyAttribute_tFAD0993D14CC3E2B1685A7D29A1B551E9A8DD4C3 *)cache->attributes[1];
-		IsReadOnlyAttribute__ctor_m3E3DB4779359F51DB7256A1D9C9C8097145CB031(tmp, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void iOSNotificationCalendarTrigger_t76FB215858918317C5688798905AC715A0898022_CustomAttributesCacheGenerator_iOSNotificationCalendarTrigger_set_Repeats_m7186E9769E79CF510A57105FCEFCC325A3E18F28(CustomAttributesCache* cache)

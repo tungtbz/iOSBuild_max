@@ -18243,6 +18243,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void iOSBridge__ShowAppOpenAds_m9692A13C3F8C8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__IsAppOpenAdsReady_mA8F628EE2CD5A33F146033A8DC1AE0F8A5BB51EF (const RuntimeMethod* method);
 // System.Boolean RofiSdk.iOSBridge::_IsConsentFlowDone()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__IsConsentFlowDone_m4BE030AACFAF9E166723F37599366304147733C2 (const RuntimeMethod* method);
+// System.Boolean RofiSdk.iOSBridge::_IsATTFlowFinished()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__IsATTFlowFinished_m64C33D060FAFF2D4F88E4F6091FD61361F8730AA (const RuntimeMethod* method);
 // System.Boolean RofiSdk.iOSBridge::_AdMobCanRequestAds()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__AdMobCanRequestAds_mCAC8816906BE80C81FD831DD10359F7914EA2CA4 (const RuntimeMethod* method);
 // System.Boolean RofiSdk.iOSBridge::_IsRemoteConfigReady()
@@ -18848,6 +18850,7 @@ IL2CPP_EXTERN_C void DEFAULT_CALL _ShowAppSetting();
 IL2CPP_EXTERN_C void DEFAULT_CALL _OnReadyToShowAutoInterAds();
 IL2CPP_EXTERN_C void DEFAULT_CALL _LogEvent(char*, char*);
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL _IsConsentFlowDone();
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL _IsATTFlowFinished();
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL _AdMobCanRequestAds();
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL _IsRemoteConfigReady();
 #ifdef __clang__
@@ -28727,6 +28730,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__IsConsentFlowDone_m4BE030AACF
 
 	return static_cast<bool>(returnValue);
 }
+// System.Boolean RofiSdk.iOSBridge::_IsATTFlowFinished()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__IsATTFlowFinished_m64C33D060FAFF2D4F88E4F6091FD61361F8730AA (const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(_IsATTFlowFinished)();
+
+	return static_cast<bool>(returnValue);
+}
 // System.Boolean RofiSdk.iOSBridge::_AdMobCanRequestAds()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge__AdMobCanRequestAds_mCAC8816906BE80C81FD831DD10359F7914EA2CA4 (const RuntimeMethod* method)
 {
@@ -29122,10 +29135,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge_IsOpenAppAdsAvailable_m81C9652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool iOSBridge_IsConsentFlowFinish_m28E8DAA717C1B657A2685AB920C731A51E2E4818 (iOSBridge_tF9F1D8B10E52AFD846865F1B0C238FE067C76183 * __this, const RuntimeMethod* method)
 {
 	{
-		// return _IsConsentFlowDone();
+		// return _IsConsentFlowDone() && _IsATTFlowFinished();
 		bool L_0;
 		L_0 = iOSBridge__IsConsentFlowDone_m4BE030AACFAF9E166723F37599366304147733C2(/*hidden argument*/NULL);
-		return L_0;
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		bool L_1;
+		L_1 = iOSBridge__IsATTFlowFinished_m64C33D060FAFF2D4F88E4F6091FD61361F8730AA(/*hidden argument*/NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		return (bool)0;
 	}
 }
 // System.Boolean RofiSdk.iOSBridge::AdMobCanRequestAds()
@@ -31894,7 +31920,7 @@ IL_0059:
 				bool L_15 = __this->get_inWorldSpace_4();
 				NullCheck(L_13);
 				AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298  L_16;
-				L_16 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(16 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_13, L_14, L_15);
+				L_16 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(10 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_13, L_14, L_15);
 				__this->set_U3CoperationU3E5__3_6(L_16);
 				// await operation.Task;
 				AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 * L_17 = __this->get_address_of_U3CoperationU3E5__3_6();
@@ -32354,7 +32380,7 @@ IL_0042:
 		bool L_11 = __this->get_inWorldSpace_5();
 		NullCheck(L_9);
 		AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298  L_12;
-		L_12 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(16 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_9, L_10, L_11);
+		L_12 = VirtFuncInvoker2< AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298 , Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *, bool >::Invoke(10 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.GameObject> UnityEngine.AddressableAssets.AssetReference::InstantiateAsync(UnityEngine.Transform,System.Boolean) */, L_9, L_10, L_11);
 		__this->set_U3CoperationU3E5__3_8(L_12);
 		// yield return operation;
 		AsyncOperationHandle_1_t078BA5A18ABD417B92201D3373635923590AF298  L_13 = __this->get_U3CoperationU3E5__3_8();
@@ -33585,7 +33611,7 @@ IL_010d:
 				int32_t L_37 = __this->get_priority_4();
 				NullCheck(L_34);
 				AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_38;
-				L_38 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(13 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_34, L_35, L_36, L_37);
+				L_38 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(8 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_34, L_35, L_36, L_37);
 				__this->set_U3CoperationU3E5__4_9(L_38);
 				// await operation.Task;
 				AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE * L_39 = __this->get_address_of_U3CoperationU3E5__4_9();
@@ -34205,7 +34231,7 @@ IL_00b3:
 		int32_t L_22 = __this->get_priority_5();
 		NullCheck(L_19);
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_23;
-		L_23 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(13 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_19, L_20, L_21, L_22);
+		L_23 = VirtFuncInvoker3< AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE , int32_t, bool, int32_t >::Invoke(8 /* UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> UnityEngine.AddressableAssets.AssetReference::LoadSceneAsync(UnityEngine.SceneManagement.LoadSceneMode,System.Boolean,System.Int32) */, L_19, L_20, L_21, L_22);
 		__this->set_U3CoperationU3E5__4_10(L_23);
 		// yield return operation;
 		AsyncOperationHandle_1_tB96B3BE55EEFE136B4996F894959358F2972EFBE  L_24 = __this->get_U3CoperationU3E5__4_10();

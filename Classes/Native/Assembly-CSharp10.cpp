@@ -18922,7 +18922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_AnimationEvent_Write_mF3866
 		L_13 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_12, /*hidden argument*/NULL);
 		NullCheck(L_13);
 		String_t* L_14;
-		L_14 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_13);
+		L_14 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_13);
 		NullCheck(L_10);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_10, _stringLiteralB438E2BDD3ABEDF3ADBAA019F254BA5F925470D5, L_14);
 		// writer.WriteProperty ( "objectReferenceParameter", animationEvent.objectReferenceParameter );

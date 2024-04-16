@@ -488,7 +488,7 @@ static void Sirenix_OdinInspector_CompatibilityLayer_CustomAttributesCacheGenera
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
 	}
 	{
 		RegisterFormatterAttribute_tEA1B3BBA3A10D852A78D47CCBA6062CE7219847A * tmp = (RegisterFormatterAttribute_tEA1B3BBA3A10D852A78D47CCBA6062CE7219847A *)cache->attributes[3];

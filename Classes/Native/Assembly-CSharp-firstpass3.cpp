@@ -26139,7 +26139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass13_0_U3CScanForAnno
 		Type_t * L_0 = ___t0;
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_0);
+		L_1 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_0);
 		bool L_2;
 		L_2 = String_IsNullOrEmpty_m57429705D977ACD5EE7E210A858EED6F348C36B3(L_1, /*hidden argument*/NULL);
 		if (L_2)
@@ -26151,7 +26151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass13_0_U3CScanForAnno
 		Type_t * L_3 = ___t0;
 		NullCheck(L_3);
 		String_t* L_4;
-		L_4 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_3);
+		L_4 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_3);
 		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_5 = __this->get_usingNamespaces_0();
 		int32_t L_6 = __this->get_ns_1();
 		NullCheck(L_5);

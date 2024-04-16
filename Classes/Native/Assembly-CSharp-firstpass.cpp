@@ -20925,7 +20925,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AbstractMediationBinder_IsTrueMediator_m
 		Type_t * L_2 = ___mediatorType0;
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(119 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
+		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(118 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
 		return L_3;
 	}
 }
@@ -27115,7 +27115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSubscription_areTypesCompatible_m21
 		L_3 = VirtFuncInvoker0< Type_t * >::Invoke(7 /* System.Type System.Reflection.ParameterInfo::get_ParameterType() */, L_2);
 		NullCheck(L_1);
 		bool L_4;
-		L_4 = VirtFuncInvoker1< bool, Type_t * >::Invoke(122 /* System.Boolean System.Type::Equals(System.Type) */, L_1, L_3);
+		L_4 = VirtFuncInvoker1< bool, Type_t * >::Invoke(121 /* System.Boolean System.Type::Equals(System.Type) */, L_1, L_3);
 		if (!L_4)
 		{
 			goto IL_0015;
@@ -27139,7 +27139,7 @@ IL_0015:
 		L_8 = VirtFuncInvoker0< Type_t * >::Invoke(7 /* System.Type System.Reflection.ParameterInfo::get_ParameterType() */, L_7);
 		NullCheck(L_6);
 		bool L_9;
-		L_9 = VirtFuncInvoker1< bool, Type_t * >::Invoke(119 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_6, L_8);
+		L_9 = VirtFuncInvoker1< bool, Type_t * >::Invoke(118 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_6, L_8);
 		if (!L_9)
 		{
 			goto IL_002a;
@@ -27216,7 +27216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t * AudioSubscription_createProxyEve
 		L_5 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
 		MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E* L_6;
-		L_6 = VirtFuncInvoker1< MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E*, int32_t >::Invoke(44 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)36));
+		L_6 = VirtFuncInvoker1< MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E*, int32_t >::Invoke(43 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)36));
 		U3CU3Ec__DisplayClass33_0_t5D07EC57992368842AD8B94C14B7FBA611441646 * L_7 = V_0;
 		Func_2_t736D5CB9E1D48C8363AF140355202C24D6CAE85D * L_8 = (Func_2_t736D5CB9E1D48C8363AF140355202C24D6CAE85D *)il2cpp_codegen_object_new(Func_2_t736D5CB9E1D48C8363AF140355202C24D6CAE85D_il2cpp_TypeInfo_var);
 		Func_2__ctor_mF905688E1931A04968409C615C79B807A1F45EA6(L_8, L_7, (intptr_t)((intptr_t)U3CU3Ec__DisplayClass33_0_U3CcreateProxyEventDelegateU3Eb__0_mC878E00FD700834A427AF9A5D51E3EC293DD98FA_RuntimeMethod_var), /*hidden argument*/Func_2__ctor_mF905688E1931A04968409C615C79B807A1F45EA6_RuntimeMethod_var);
@@ -28196,7 +28196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Action_tAF41423D285AE0862865348CF6CE51CD085AB
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_1 = ___listeners0;
 		NullCheck(L_1);
 		DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* L_2;
-		L_2 = VirtFuncInvoker0< DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* >::Invoke(10 /* System.Delegate[] System.Delegate::GetInvocationList() */, L_1);
+		L_2 = VirtFuncInvoker0< DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* >::Invoke(9 /* System.Delegate[] System.Delegate::GetInvocationList() */, L_1);
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_3 = ___callback1;
 		bool L_4;
 		L_4 = Enumerable_Contains_TisDelegate_t_mAC45ACAB346F028855FE163C8EB0ADF7878832BE((RuntimeObject*)(RuntimeObject*)L_2, L_3, /*hidden argument*/Enumerable_Contains_TisDelegate_t_mAC45ACAB346F028855FE163C8EB0ADF7878832BE_RuntimeMethod_var);
@@ -33580,7 +33580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pool_t29C4712C653F23DB3E3069003BDBC5C0E75B0CB
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_4);
 		NullCheck(L_1);
 		Type_t * L_5;
-		L_5 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_1, L_3);
+		L_5 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_1, L_3);
 		V_0 = L_5;
 		// injectionBinder.Bind (type).To (type);
 		RuntimeObject* L_6;

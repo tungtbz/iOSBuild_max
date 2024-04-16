@@ -11610,7 +11610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Dropdown_Write_m78353A289BD
 		L_40 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_39, /*hidden argument*/NULL);
 		NullCheck(L_40);
 		String_t* L_41;
-		L_41 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_40);
+		L_41 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_40);
 		NullCheck(L_37);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_37, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_41);
 		// writer.WriteProperty ( "targetGraphic", dropdown.targetGraphic );
@@ -28625,7 +28625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_InputField_Write_m4C097E7DF
 		L_19 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_18, /*hidden argument*/NULL);
 		NullCheck(L_19);
 		String_t* L_20;
-		L_20 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_19);
+		L_20 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_19);
 		NullCheck(L_16);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_16, _stringLiteral6358F7577F411884075B1BC81767A1C621D2237D, L_20);
 		// writer.WriteProperty ( "placeholder", inputField.placeholder );
@@ -28799,7 +28799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_InputField_Write_m4C097E7DF
 		L_84 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_83, /*hidden argument*/NULL);
 		NullCheck(L_84);
 		String_t* L_85;
-		L_85 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_84);
+		L_85 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_84);
 		NullCheck(L_81);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_81, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_85);
 		// writer.WriteProperty ( "targetGraphic", inputField.targetGraphic );

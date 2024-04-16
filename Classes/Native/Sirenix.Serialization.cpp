@@ -8570,7 +8570,7 @@ IL_000e:
 		Type_t * L_3 = ___type0;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtFuncInvoker0< int32_t >::Invoke(31 /* System.Int32 System.Type::GetArrayRank() */, L_3);
+		L_4 = VirtFuncInvoker0< int32_t >::Invoke(30 /* System.Int32 System.Type::GetArrayRank() */, L_3);
 		if ((!(((uint32_t)L_4) == ((uint32_t)1))))
 		{
 			goto IL_007e;
@@ -8580,7 +8580,7 @@ IL_000e:
 		Type_t * L_5 = ___type0;
 		NullCheck(L_5);
 		Type_t * L_6;
-		L_6 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_5);
+		L_6 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_5);
 		IL2CPP_RUNTIME_CLASS_INIT(FormatterUtilities_t36358BAF3CB36752197F690560483D11C0C9E013_il2cpp_TypeInfo_var);
 		bool L_7;
 		L_7 = FormatterUtilities_IsPrimitiveArrayType_m1016FA44C18FD5C4BCB994596EDCF80FA726AB1A(L_6, /*hidden argument*/NULL);
@@ -8600,13 +8600,13 @@ IL_000e:
 		Type_t * L_13 = ___type0;
 		NullCheck(L_13);
 		Type_t * L_14;
-		L_14 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_13);
+		L_14 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_13);
 		NullCheck(L_12);
 		ArrayElementTypeCheck (L_12, L_14);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_14);
 		NullCheck(L_10);
 		Type_t * L_15;
-		L_15 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_10, L_12);
+		L_15 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_10, L_12);
 		RuntimeObject * L_16;
 		L_16 = Activator_CreateInstance_m8D0BDBD446BBCB24F702D8678A57E4594919C8BD(L_15, /*hidden argument*/NULL);
 		*((RuntimeObject **)L_8) = (RuntimeObject *)((RuntimeObject*)Castclass((RuntimeObject*)L_16, IFormatter_tBA57851DD2E13BD0E5A20CEFA38823ECACC6DA16_il2cpp_TypeInfo_var));
@@ -8626,13 +8626,13 @@ IL_0051:
 		Type_t * L_22 = ___type0;
 		NullCheck(L_22);
 		Type_t * L_23;
-		L_23 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_22);
+		L_23 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_22);
 		NullCheck(L_21);
 		ArrayElementTypeCheck (L_21, L_23);
 		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_23);
 		NullCheck(L_19);
 		Type_t * L_24;
-		L_24 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_19, L_21);
+		L_24 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_19, L_21);
 		RuntimeObject * L_25;
 		L_25 = Activator_CreateInstance_m8D0BDBD446BBCB24F702D8678A57E4594919C8BD(L_24, /*hidden argument*/NULL);
 		*((RuntimeObject **)L_17) = (RuntimeObject *)((RuntimeObject*)Castclass((RuntimeObject*)L_25, IFormatter_tBA57851DD2E13BD0E5A20CEFA38823ECACC6DA16_il2cpp_TypeInfo_var));
@@ -8657,13 +8657,13 @@ IL_007e:
 		Type_t * L_33 = ___type0;
 		NullCheck(L_33);
 		Type_t * L_34;
-		L_34 = VirtFuncInvoker0< Type_t * >::Invoke(106 /* System.Type System.Type::GetElementType() */, L_33);
+		L_34 = VirtFuncInvoker0< Type_t * >::Invoke(105 /* System.Type System.Type::GetElementType() */, L_33);
 		NullCheck(L_32);
 		ArrayElementTypeCheck (L_32, L_34);
 		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t *)L_34);
 		NullCheck(L_28);
 		Type_t * L_35;
-		L_35 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_28, L_32);
+		L_35 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_28, L_32);
 		RuntimeObject * L_36;
 		L_36 = Activator_CreateInstance_m8D0BDBD446BBCB24F702D8678A57E4594919C8BD(L_35, /*hidden argument*/NULL);
 		*((RuntimeObject **)L_26) = (RuntimeObject *)((RuntimeObject*)Castclass((RuntimeObject*)L_36, IFormatter_tBA57851DD2E13BD0E5A20CEFA38823ECACC6DA16_il2cpp_TypeInfo_var));
@@ -27372,7 +27372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ColorBlockFormatterLocator_TryGetFormatt
 		Type_t * L_1 = ___type0;
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_FullName() */, L_1);
+		L_2 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_FullName() */, L_1);
 		bool L_3;
 		L_3 = String_op_Equality_m50B3548E4AC232558190B0052877B290AA1D436A(L_2, _stringLiteralE31AE61A5CD630FF92044084DDF61A208DA78F4F, /*hidden argument*/NULL);
 		if (!L_3)
@@ -27393,7 +27393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ColorBlockFormatterLocator_TryGetFormatt
 		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_8);
 		NullCheck(L_5);
 		Type_t * L_9;
-		L_9 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_5, L_7);
+		L_9 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(102 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_5, L_7);
 		V_0 = L_9;
 		RuntimeObject** L_10 = ___formatter3;
 		Type_t * L_11 = V_0;
@@ -27664,7 +27664,7 @@ IL_0010:
 		Type_t * L_3 = ___serializedGenericTypeDefinition0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(83 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_3);
 		if (L_4)
 		{
 			goto IL_0033;

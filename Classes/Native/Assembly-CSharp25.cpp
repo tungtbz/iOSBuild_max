@@ -48390,7 +48390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_doozyEditorAssemblyU3Eb__
 		TypeInfo_tFFBAC0D7187BFD2D25CC801679BC9645020EC04F * L_0 = ___typeInfo0;
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_0);
+		L_1 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_0);
 		if (!L_1)
 		{
 			goto IL_0019;
@@ -48400,7 +48400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_doozyEditorAssemblyU3Eb__
 		TypeInfo_tFFBAC0D7187BFD2D25CC801679BC9645020EC04F * L_2 = ___typeInfo0;
 		NullCheck(L_2);
 		String_t* L_3;
-		L_3 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_Namespace() */, L_2);
+		L_3 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_Namespace() */, L_2);
 		NullCheck(L_3);
 		bool L_4;
 		L_4 = String_Contains_mA26BDCCE8F191E8965EB8EEFC18BB4D0F85A075A(L_3, _stringLiteralD59167E8896932BA5B0758208317C42249B3A456, /*hidden argument*/NULL);
@@ -50501,7 +50501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass3_0_U3CInitializeU3
 		Type_t * L_1 = ___p0;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(119 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(118 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
 		if (!L_2)
 		{
 			goto IL_0020;
@@ -60499,7 +60499,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass2_0_U3CGetDerivedTy
 		L_2 = U3CU3Ef__AnonymousType0_2_get_assemblyType_mA0FBDCC4747964982B28A955056E037DCEC89D7F_inline(L_1, /*hidden argument*/U3CU3Ef__AnonymousType0_2_get_assemblyType_mA0FBDCC4747964982B28A955056E037DCEC89D7F_RuntimeMethod_var);
 		NullCheck(L_0);
 		bool L_3;
-		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(119 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_2);
+		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(118 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_2);
 		return L_3;
 	}
 }
@@ -60521,7 +60521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass2_0_U3CGetDerivedTy
 		Type_t * L_2 = __this->get_type_0();
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(117 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_1, L_2);
+		L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(116 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_1, L_2);
 		if (!L_3)
 		{
 			goto IL_0022;

@@ -9332,7 +9332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Scrollbar_Write_m9D3540889F
 		L_34 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_33, /*hidden argument*/NULL);
 		NullCheck(L_34);
 		String_t* L_35;
-		L_35 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_34);
+		L_35 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_34);
 		NullCheck(L_31);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_31, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_35);
 		// writer.WriteProperty ( "targetGraphic", scrollbar.targetGraphic );
@@ -17572,7 +17572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveGameType_Slider_Write_m2DD208CC05623
 		L_43 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_42, /*hidden argument*/NULL);
 		NullCheck(L_43);
 		String_t* L_44;
-		L_44 = VirtFuncInvoker0< String_t* >::Invoke(30 /* System.String System.Type::get_AssemblyQualifiedName() */, L_43);
+		L_44 = VirtFuncInvoker0< String_t* >::Invoke(29 /* System.String System.Type::get_AssemblyQualifiedName() */, L_43);
 		NullCheck(L_40);
 		GenericInterfaceActionInvoker2< String_t*, String_t* >::Invoke(ISaveGameWriter_WriteProperty_TisString_t_m56706141EE61CA68671AD1282678D02065E274B3_RuntimeMethod_var, L_40, _stringLiteral39A77A67EBE90CE8C015E378FA2128DE9D400C03, L_44);
 		// writer.WriteProperty ( "targetGraphic", slider.targetGraphic );

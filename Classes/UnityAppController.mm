@@ -39,7 +39,7 @@
 #include "FirebaseRemoteConfigHelper.h"
 #include <FBSDKCoreKit/FBSDKCoreKit.h>
 #include <FBAudienceNetwork/FBAudienceNetwork.h>
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
+//#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 // we assume that app delegate is never changed and we can cache it, instead of re-query UIApplication every time
 UnityAppController* _UnityAppController = nil;
