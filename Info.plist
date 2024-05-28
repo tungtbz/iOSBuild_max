@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plist version="1.0">
   <dict>
+    <key>AdmobBannerId</key>
+    <string>ca-app-pub-3940256099942544/2435281174</string>
     <key>AdmodAOAId</key>
-    <string>ca-app-pub-1919652342336147/8324713239</string>
+    <string>ca-app-pub-1919652342336147/83247132391</string>
     <key>AFAppleId</key>
-    <string>6478867960</string>
+    <string>6502815970</string>
     <key>AFDevKey</key>
     <string>55QdbFBhr3gJ2dmQjtiQYT</string>
     <key>ALAppOpenId</key>
-    <string>f3473be73762351a</string>
+    <string>b0f66f77a1f7f72d</string>
     <key>ALBannerId</key>
-    <string>39f3a8f97ccb8760</string>
+    <string>c4b0037852218903</string>
     <key>ALBannerPosition</key>
     <string>bottom_center</string>
     <key>ALInterId</key>
-    <string>f36608d604c4fd2a</string>
+    <string>0e84c27db2361f8b</string>
     <key>ALMrecId</key>
-    <string>573087fc6df53e3a</string>
+    <string>9c39bceb07a2329c</string>
     <key>ALMrecPosition</key>
     <string>bottom_center</string>
     <key>ALNativeNormal</key>
@@ -24,7 +26,7 @@
     <key>ALNativeSmall</key>
     <string>f32a01ae83c9f174</string>
     <key>ALRewardId</key>
-    <string>3fc1eefdb1c82f4e</string>
+    <string>8db602d4d28f8621</string>
     <key>AppLovinSdkKey</key>
     <string>k4zcutB4Zm3UzNpe_LApO1CCQU38cBxs1KLXxDwI4B5hApPwBK9Hh39JyuXQBq8V_cFqAxK6uUsMBdpMSz8Nev</string>
     <key>CADisableMinimumFrameDuration</key>
@@ -36,7 +38,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>CFBundleDisplayName</key>
-    <string>Lighter Simulator: Zippo Prank</string>
+    <string>Timebomb Prank, Gun Simulator</string>
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleGetInfoString</key>
@@ -60,17 +62,17 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>1</string>
+    <string>1.1</string>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>2</string>
     <key>FacebookAppID</key>
-    <string>568774062060647</string>
+    <string>1289179029130487</string>
     <key>FacebookClientToken</key>
     <string>68ef5502b804cee0df183f7e0b940db2</string>
     <key>FacebookDisplayName</key>
     <string>Prank Call - Fake Call &amp; Chat</string>
     <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-4667689154549040~7111305811</string>
+    <string>ca-app-pub-4667689154549040~7725220739</string>
     <key>GADIsAdManagerApp</key>
     <true />
     <key>GADUUnityVersion</key>
@@ -104,6 +106,10 @@
     <string>https://publish.bravestars.com/privacy.txt</string>
     <key>SKAdNetworkItems</key>
     <array>
+      <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>55644vm79v.skadnetwork</string>
+      </dict>
       <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>22mmun2rn5.skadnetwork</string>
@@ -1210,10 +1216,6 @@
       </dict>
       <dict>
         <key>SKAdNetworkIdentifier</key>
-        <string>tvvz7th9br.skadnetwork</string>
-      </dict>
-      <dict>
-        <key>SKAdNetworkIdentifier</key>
         <string>WZMMZ9FP6W.skadnetwork</string>
       </dict>
       <dict>
@@ -1511,7 +1513,7 @@
     <key>UnityNotificationRequestAuthorizationForRemoteNotificationsOnAppLaunch</key>
     <false />
     <key>UnityNotificationRequestAuthorizationOnAppLaunch</key>
-    <false />
+    <true />
     <key>UnityRemoteNotificationForegroundPresentationOptions</key>
     <integer>-1</integer>
     <key>UnityUseAPSReleaseEnvironment</key>

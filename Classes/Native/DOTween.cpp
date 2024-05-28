@@ -21091,7 +21091,7 @@ IL_0049:
 		Assembly_t * L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
 		NullCheck(L_19);
 		AssemblyName_t066E458E26373ECD644F79643E9D4483212C9824 * L_20;
-		L_20 = VirtFuncInvoker0< AssemblyName_t066E458E26373ECD644F79643E9D4483212C9824 * >::Invoke(18 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_19);
+		L_20 = VirtFuncInvoker0< AssemblyName_t066E458E26373ECD644F79643E9D4483212C9824 * >::Invoke(17 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName() */, L_19);
 		String_t* L_21;
 		L_21 = String_Format_m8464C6DD7299114954DA87FC39FCD129F3E2ACA2(_stringLiteralB5998705EF12506344D61B653EA1DAE85B97BC9C, L_15, L_20, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);

@@ -154,14 +154,10 @@ struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
 // System.IntPtr[]
 struct IntPtrU5BU5D_t27FC72B0409D75AAF33EC42498E8094E95FEE9A6;
-// UnityEngine.Resolution[]
-struct ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597;
 // System.Single[]
 struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t4AD999C288CB6D1F38A299D12B1598D606588971;
-// UnityEngine.WebCamDevice[]
-struct WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E;
 // System.Action
 struct Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6;
 // UnityEngine.AnimationCurve
@@ -214,12 +210,8 @@ struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A;
 struct SafeSerializationManager_tDE44F029589A028F8A3053C5C06153FAB4AAE29F;
 // System.String
 struct String_t;
-// UnityEngine.Texture
-struct Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
-// UnityEngine.WebCamTexture
-struct WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62;
 // UnityEngine.AudioClip/PCMReaderCallback
 struct PCMReaderCallback_t9CA1437D36509A9FAC5EDD8FF2BC3259C24D0E0B;
 // UnityEngine.AudioClip/PCMSetPositionCallback
@@ -240,8 +232,6 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_i
 IL2CPP_EXTERN_C RuntimeClass* PCMReaderCallback_t9CA1437D36509A9FAC5EDD8FF2BC3259C24D0E0B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PCMSetPositionCallback_tBDD99E7C0697687F1E7B06CDD5DE444A3709CF4C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayableHandle_t50DCD240B0400DDAD0822C13E5DBC7AD64DC027A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt32_tE60352A06233E4E69DD198BCC67142159F686B15_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral49403A17E8D32B35CB5B66AB1A2651A7EEAD1B00;
 IL2CPP_EXTERN_C String_t* _stringLiteral5633EC5A323E76AB2DB48162D296F674B1A4AE13;
@@ -259,12 +249,9 @@ struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
-struct Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 ;
 
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
-struct ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597;
 struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
-struct WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -639,44 +626,6 @@ public:
 	inline void set_Zero_1(intptr_t value)
 	{
 		___Zero_1 = value;
-	}
-};
-
-
-// UnityEngine.Resolution
-struct Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 
-{
-public:
-	// System.Int32 UnityEngine.Resolution::m_Width
-	int32_t ___m_Width_0;
-	// System.Int32 UnityEngine.Resolution::m_Height
-	int32_t ___m_Height_1;
-	// System.Int32 UnityEngine.Resolution::m_RefreshRate
-	int32_t ___m_RefreshRate_2;
-
-public:
-	inline static int32_t get_offset_of_m_Width_0() { return static_cast<int32_t>(offsetof(Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767, ___m_Width_0)); }
-	inline int32_t get_m_Width_0() const { return ___m_Width_0; }
-	inline int32_t* get_address_of_m_Width_0() { return &___m_Width_0; }
-	inline void set_m_Width_0(int32_t value)
-	{
-		___m_Width_0 = value;
-	}
-
-	inline static int32_t get_offset_of_m_Height_1() { return static_cast<int32_t>(offsetof(Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767, ___m_Height_1)); }
-	inline int32_t get_m_Height_1() const { return ___m_Height_1; }
-	inline int32_t* get_address_of_m_Height_1() { return &___m_Height_1; }
-	inline void set_m_Height_1(int32_t value)
-	{
-		___m_Height_1 = value;
-	}
-
-	inline static int32_t get_offset_of_m_RefreshRate_2() { return static_cast<int32_t>(offsetof(Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767, ___m_RefreshRate_2)); }
-	inline int32_t get_m_RefreshRate_2() const { return ___m_RefreshRate_2; }
-	inline int32_t* get_address_of_m_RefreshRate_2() { return &___m_RefreshRate_2; }
-	inline void set_m_RefreshRate_2(int32_t value)
-	{
-		___m_RefreshRate_2 = value;
 	}
 };
 
@@ -1397,24 +1346,6 @@ public:
 };
 
 
-// UnityEngine.WebCamKind
-struct WebCamKind_t27EA4C0DCCBC088C1C35CC9BB08F0BCF22A890F2 
-{
-public:
-	// System.Int32 UnityEngine.WebCamKind::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(WebCamKind_t27EA4C0DCCBC088C1C35CC9BB08F0BCF22A890F2, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
 // UnityEngine.AudioClip
 struct AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
@@ -1622,110 +1553,6 @@ public:
 };
 
 
-// UnityEngine.Texture
-struct Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
-{
-public:
-
-public:
-};
-
-struct Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE_StaticFields
-{
-public:
-	// System.Int32 UnityEngine.Texture::GenerateAllMips
-	int32_t ___GenerateAllMips_4;
-
-public:
-	inline static int32_t get_offset_of_GenerateAllMips_4() { return static_cast<int32_t>(offsetof(Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE_StaticFields, ___GenerateAllMips_4)); }
-	inline int32_t get_GenerateAllMips_4() const { return ___GenerateAllMips_4; }
-	inline int32_t* get_address_of_GenerateAllMips_4() { return &___GenerateAllMips_4; }
-	inline void set_GenerateAllMips_4(int32_t value)
-	{
-		___GenerateAllMips_4 = value;
-	}
-};
-
-
-// UnityEngine.WebCamDevice
-struct WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C 
-{
-public:
-	// System.String UnityEngine.WebCamDevice::m_Name
-	String_t* ___m_Name_0;
-	// System.String UnityEngine.WebCamDevice::m_DepthCameraName
-	String_t* ___m_DepthCameraName_1;
-	// System.Int32 UnityEngine.WebCamDevice::m_Flags
-	int32_t ___m_Flags_2;
-	// UnityEngine.WebCamKind UnityEngine.WebCamDevice::m_Kind
-	int32_t ___m_Kind_3;
-	// UnityEngine.Resolution[] UnityEngine.WebCamDevice::m_Resolutions
-	ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597* ___m_Resolutions_4;
-
-public:
-	inline static int32_t get_offset_of_m_Name_0() { return static_cast<int32_t>(offsetof(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C, ___m_Name_0)); }
-	inline String_t* get_m_Name_0() const { return ___m_Name_0; }
-	inline String_t** get_address_of_m_Name_0() { return &___m_Name_0; }
-	inline void set_m_Name_0(String_t* value)
-	{
-		___m_Name_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_Name_0), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_m_DepthCameraName_1() { return static_cast<int32_t>(offsetof(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C, ___m_DepthCameraName_1)); }
-	inline String_t* get_m_DepthCameraName_1() const { return ___m_DepthCameraName_1; }
-	inline String_t** get_address_of_m_DepthCameraName_1() { return &___m_DepthCameraName_1; }
-	inline void set_m_DepthCameraName_1(String_t* value)
-	{
-		___m_DepthCameraName_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_DepthCameraName_1), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_m_Flags_2() { return static_cast<int32_t>(offsetof(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C, ___m_Flags_2)); }
-	inline int32_t get_m_Flags_2() const { return ___m_Flags_2; }
-	inline int32_t* get_address_of_m_Flags_2() { return &___m_Flags_2; }
-	inline void set_m_Flags_2(int32_t value)
-	{
-		___m_Flags_2 = value;
-	}
-
-	inline static int32_t get_offset_of_m_Kind_3() { return static_cast<int32_t>(offsetof(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C, ___m_Kind_3)); }
-	inline int32_t get_m_Kind_3() const { return ___m_Kind_3; }
-	inline int32_t* get_address_of_m_Kind_3() { return &___m_Kind_3; }
-	inline void set_m_Kind_3(int32_t value)
-	{
-		___m_Kind_3 = value;
-	}
-
-	inline static int32_t get_offset_of_m_Resolutions_4() { return static_cast<int32_t>(offsetof(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C, ___m_Resolutions_4)); }
-	inline ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597* get_m_Resolutions_4() const { return ___m_Resolutions_4; }
-	inline ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597** get_address_of_m_Resolutions_4() { return &___m_Resolutions_4; }
-	inline void set_m_Resolutions_4(ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597* value)
-	{
-		___m_Resolutions_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_Resolutions_4), (void*)value);
-	}
-};
-
-// Native definition for P/Invoke marshalling of UnityEngine.WebCamDevice
-struct WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_pinvoke
-{
-	char* ___m_Name_0;
-	char* ___m_DepthCameraName_1;
-	int32_t ___m_Flags_2;
-	int32_t ___m_Kind_3;
-	Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 * ___m_Resolutions_4;
-};
-// Native definition for COM marshalling of UnityEngine.WebCamDevice
-struct WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_com
-{
-	Il2CppChar* ___m_Name_0;
-	Il2CppChar* ___m_DepthCameraName_1;
-	int32_t ___m_Flags_2;
-	int32_t ___m_Kind_3;
-	Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 * ___m_Resolutions_4;
-};
-
 // System.Action`1<System.Boolean>
 struct Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83  : public MulticastDelegate_t
 {
@@ -1783,15 +1610,6 @@ public:
 
 // System.NullReferenceException
 struct NullReferenceException_t44B4F3CDE3111E74591952B8BE8707B28866D724  : public SystemException_tC551B4D6EE3772B5F32C71EE8C719F4B43ECCC62
-{
-public:
-
-public:
-};
-
-
-// UnityEngine.WebCamTexture
-struct WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62  : public Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE
 {
 public:
 
@@ -1962,90 +1780,6 @@ public:
 		m_Items[index] = value;
 	}
 };
-// UnityEngine.Resolution[]
-struct ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767  m_Items[1];
-
-public:
-	inline Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.WebCamDevice[]
-struct WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C  m_Items[1];
-
-public:
-	inline WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_Name_0), (void*)NULL);
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_DepthCameraName_1), (void*)NULL);
-		#endif
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_Resolutions_4), (void*)NULL);
-		#endif
-	}
-	inline WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C  value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_Name_0), (void*)NULL);
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_DepthCameraName_1), (void*)NULL);
-		#endif
-		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___m_Resolutions_4), (void*)NULL);
-		#endif
-	}
-};
 // System.Delegate[]
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8  : public RuntimeArray
 {
@@ -2170,14 +1904,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Stop_mD2260A580FFE563C64EFBD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_GetOutputDataHelper_m1B65E98D9D376D51039E029FB3809E2B933A5881 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___source0, SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___samples1, int32_t ___channel2, const RuntimeMethod* method);
 // System.Void UnityEngine.AudioSource::GetSpectrumDataHelper(UnityEngine.AudioSource,System.Single[],System.Int32,UnityEngine.FFTWindow)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_GetSpectrumDataHelper_mC1D891C8E867B60240B3F974B01372F887CBDDF8 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___source0, SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___samples1, int32_t ___channel2, int32_t ___window3, const RuntimeMethod* method);
-// System.String UnityEngine.WebCamDevice::get_name()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method);
-// System.Boolean UnityEngine.WebCamDevice::get_isFrontFacing()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Texture::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture__ctor_mA6FE9CC0AF05A99FADCEF0BED2FB0C95571AAF4A (Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * ___self0, String_t* ___scriptingDevice1, int32_t ___requestedWidth2, int32_t ___requestedHeight3, int32_t ___maxFramerate4, const RuntimeMethod* method);
 // System.Boolean UnityEngine.AudioSettings/Mobile::get_muteState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mobile_get_muteState_m14B80E56C6AE9E2D13EE6B7DD3FA5DC9628AF7BE_inline (const RuntimeMethod* method);
 // System.Void UnityEngine.AudioSettings/Mobile::set_muteState(System.Boolean)
@@ -5241,261 +4967,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_GetSpectrumData_m534E9BDB8C2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: UnityEngine.WebCamDevice
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_pinvoke(const WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C& unmarshaled, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_Name_0 = il2cpp_codegen_marshal_string(unmarshaled.get_m_Name_0());
-	marshaled.___m_DepthCameraName_1 = il2cpp_codegen_marshal_string(unmarshaled.get_m_DepthCameraName_1());
-	marshaled.___m_Flags_2 = unmarshaled.get_m_Flags_2();
-	marshaled.___m_Kind_3 = unmarshaled.get_m_Kind_3();
-	if (unmarshaled.get_m_Resolutions_4() != NULL)
-	{
-		il2cpp_array_size_t _unmarshaled_m_Resolutions_Length = (unmarshaled.get_m_Resolutions_4())->max_length;
-		marshaled.___m_Resolutions_4 = il2cpp_codegen_marshal_allocate_array<Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 >(_unmarshaled_m_Resolutions_Length);
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(_unmarshaled_m_Resolutions_Length); i++)
-		{
-			(marshaled.___m_Resolutions_4)[i] = (unmarshaled.get_m_Resolutions_4())->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
-		}
-	}
-	else
-	{
-		marshaled.___m_Resolutions_4 = NULL;
-	}
-}
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_pinvoke_back(const WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_pinvoke& marshaled, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.set_m_Name_0(il2cpp_codegen_marshal_string_result(marshaled.___m_Name_0));
-	unmarshaled.set_m_DepthCameraName_1(il2cpp_codegen_marshal_string_result(marshaled.___m_DepthCameraName_1));
-	int32_t unmarshaled_m_Flags_temp_2 = 0;
-	unmarshaled_m_Flags_temp_2 = marshaled.___m_Flags_2;
-	unmarshaled.set_m_Flags_2(unmarshaled_m_Flags_temp_2);
-	int32_t unmarshaled_m_Kind_temp_3 = 0;
-	unmarshaled_m_Kind_temp_3 = marshaled.___m_Kind_3;
-	unmarshaled.set_m_Kind_3(unmarshaled_m_Kind_temp_3);
-	if (marshaled.___m_Resolutions_4 != NULL)
-	{
-		if (unmarshaled.get_m_Resolutions_4() == NULL)
-		{
-			unmarshaled.set_m_Resolutions_4(reinterpret_cast<ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597*>((ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597*)SZArrayNew(ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597_il2cpp_TypeInfo_var, 1)));
-		}
-		il2cpp_array_size_t _arrayLength = (unmarshaled.get_m_Resolutions_4())->max_length;
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(_arrayLength); i++)
-		{
-			(unmarshaled.get_m_Resolutions_4())->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___m_Resolutions_4)[i]);
-		}
-	}
-}
-// Conversion method for clean up from marshalling of: UnityEngine.WebCamDevice
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_pinvoke_cleanup(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_pinvoke& marshaled)
-{
-	il2cpp_codegen_marshal_free(marshaled.___m_Name_0);
-	marshaled.___m_Name_0 = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___m_DepthCameraName_1);
-	marshaled.___m_DepthCameraName_1 = NULL;
-	if (marshaled.___m_Resolutions_4 != NULL)
-	{
-		il2cpp_codegen_marshal_free(marshaled.___m_Resolutions_4);
-		marshaled.___m_Resolutions_4 = NULL;
-	}
-}
-// Conversion methods for marshalling of: UnityEngine.WebCamDevice
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_com(const WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C& unmarshaled, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_com& marshaled)
-{
-	marshaled.___m_Name_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_Name_0());
-	marshaled.___m_DepthCameraName_1 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_DepthCameraName_1());
-	marshaled.___m_Flags_2 = unmarshaled.get_m_Flags_2();
-	marshaled.___m_Kind_3 = unmarshaled.get_m_Kind_3();
-	if (unmarshaled.get_m_Resolutions_4() != NULL)
-	{
-		il2cpp_array_size_t _unmarshaled_m_Resolutions_Length = (unmarshaled.get_m_Resolutions_4())->max_length;
-		marshaled.___m_Resolutions_4 = il2cpp_codegen_marshal_allocate_array<Resolution_t1906ED569E57B1BD0C7F7A8DBCEA1D584F5F1767 >(_unmarshaled_m_Resolutions_Length);
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(_unmarshaled_m_Resolutions_Length); i++)
-		{
-			(marshaled.___m_Resolutions_4)[i] = (unmarshaled.get_m_Resolutions_4())->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
-		}
-	}
-	else
-	{
-		marshaled.___m_Resolutions_4 = NULL;
-	}
-}
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_com_back(const WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_com& marshaled, WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.set_m_Name_0(il2cpp_codegen_marshal_bstring_result(marshaled.___m_Name_0));
-	unmarshaled.set_m_DepthCameraName_1(il2cpp_codegen_marshal_bstring_result(marshaled.___m_DepthCameraName_1));
-	int32_t unmarshaled_m_Flags_temp_2 = 0;
-	unmarshaled_m_Flags_temp_2 = marshaled.___m_Flags_2;
-	unmarshaled.set_m_Flags_2(unmarshaled_m_Flags_temp_2);
-	int32_t unmarshaled_m_Kind_temp_3 = 0;
-	unmarshaled_m_Kind_temp_3 = marshaled.___m_Kind_3;
-	unmarshaled.set_m_Kind_3(unmarshaled_m_Kind_temp_3);
-	if (marshaled.___m_Resolutions_4 != NULL)
-	{
-		if (unmarshaled.get_m_Resolutions_4() == NULL)
-		{
-			unmarshaled.set_m_Resolutions_4(reinterpret_cast<ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597*>((ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597*)SZArrayNew(ResolutionU5BU5D_t06BC9930CBEA8A2A4EEBA9534C2498E7CD0B5597_il2cpp_TypeInfo_var, 1)));
-		}
-		il2cpp_array_size_t _arrayLength = (unmarshaled.get_m_Resolutions_4())->max_length;
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(_arrayLength); i++)
-		{
-			(unmarshaled.get_m_Resolutions_4())->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___m_Resolutions_4)[i]);
-		}
-	}
-}
-// Conversion method for clean up from marshalling of: UnityEngine.WebCamDevice
-IL2CPP_EXTERN_C void WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshal_com_cleanup(WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C_marshaled_com& marshaled)
-{
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_Name_0);
-	marshaled.___m_Name_0 = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_DepthCameraName_1);
-	marshaled.___m_DepthCameraName_1 = NULL;
-	if (marshaled.___m_Resolutions_4 != NULL)
-	{
-		il2cpp_codegen_marshal_free(marshaled.___m_Resolutions_4);
-		marshaled.___m_Resolutions_4 = NULL;
-	}
-}
-// System.String UnityEngine.WebCamDevice::get_name()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method)
-{
-	String_t* V_0 = NULL;
-	{
-		String_t* L_0 = __this->get_m_Name_0();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		String_t* L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  String_t* WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * _thisAdjusted = reinterpret_cast<WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C *>(__this + _offset);
-	String_t* _returnValue;
-	_returnValue = WebCamDevice_get_name_mD475CBF038076E5657D55D4DA43A7DC69CE6B6D4(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Boolean UnityEngine.WebCamDevice::get_isFrontFacing()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15 (WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * __this, const RuntimeMethod* method)
-{
-	bool V_0 = false;
-	{
-		int32_t L_0 = __this->get_m_Flags_2();
-		V_0 = (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&(int32_t)1))) <= ((uint32_t)0)))? 1 : 0);
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		bool L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  bool WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C * _thisAdjusted = reinterpret_cast<WebCamDevice_t84AC34018729892FB910F4F146AB9820DD006A2C *>(__this + _offset);
-	bool _returnValue;
-	_returnValue = WebCamDevice_get_isFrontFacing_m43547AAF7B0729DB1962456A3EFF161B5E273E15(_thisAdjusted, method);
-	return _returnValue;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.WebCamDevice[] UnityEngine.WebCamTexture::get_devices()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E* WebCamTexture_get_devices_mFA6507AC8F773305B8C4868EA2FBFF75757CFB53 (const RuntimeMethod* method)
-{
-	typedef WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E* (*WebCamTexture_get_devices_mFA6507AC8F773305B8C4868EA2FBFF75757CFB53_ftn) ();
-	static WebCamTexture_get_devices_mFA6507AC8F773305B8C4868EA2FBFF75757CFB53_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_get_devices_mFA6507AC8F773305B8C4868EA2FBFF75757CFB53_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_devices()");
-	WebCamDeviceU5BU5D_t5509CE66483F44F4D0DB82BF41F86C649CB7B70E* icallRetVal = _il2cpp_icall_func();
-	return icallRetVal;
-}
-// System.Void UnityEngine.WebCamTexture::.ctor(System.String,System.Int32,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamTexture__ctor_m8369712442E77D9130CD2F76A3FA4846F74F16CB (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * __this, String_t* ___deviceName0, int32_t ___requestedWidth1, int32_t ___requestedHeight2, int32_t ___requestedFPS3, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE_il2cpp_TypeInfo_var);
-		Texture__ctor_mA6FE9CC0AF05A99FADCEF0BED2FB0C95571AAF4A(__this, /*hidden argument*/NULL);
-		String_t* L_0 = ___deviceName0;
-		int32_t L_1 = ___requestedWidth1;
-		int32_t L_2 = ___requestedHeight2;
-		int32_t L_3 = ___requestedFPS3;
-		WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A(__this, L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.WebCamTexture::Play()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamTexture_Play_m8527994B54606AE71602DB93195D2BA44CEDC2B1 (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * __this, const RuntimeMethod* method)
-{
-	typedef void (*WebCamTexture_Play_m8527994B54606AE71602DB93195D2BA44CEDC2B1_ftn) (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 *);
-	static WebCamTexture_Play_m8527994B54606AE71602DB93195D2BA44CEDC2B1_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_Play_m8527994B54606AE71602DB93195D2BA44CEDC2B1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::Play()");
-	_il2cpp_icall_func(__this);
-}
-// System.Void UnityEngine.WebCamTexture::Stop()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708 (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * __this, const RuntimeMethod* method)
-{
-	typedef void (*WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708_ftn) (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 *);
-	static WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::Stop()");
-	_il2cpp_icall_func(__this);
-}
-// System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * ___self0, String_t* ___scriptingDevice1, int32_t ___requestedWidth2, int32_t ___requestedHeight3, int32_t ___maxFramerate4, const RuntimeMethod* method)
-{
-	typedef void (*WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A_ftn) (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 *, String_t*, int32_t, int32_t, int32_t);
-	static WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_Internal_CreateWebCamTexture_m21875AB20CC0B0826DDBB59744D438C7B4F5139A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)");
-	_il2cpp_icall_func(___self0, ___scriptingDevice1, ___requestedWidth2, ___requestedHeight3, ___maxFramerate4);
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

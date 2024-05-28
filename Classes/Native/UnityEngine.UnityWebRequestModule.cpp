@@ -3980,10 +3980,6 @@ inline int32_t Dictionary_2_get_Count_m0D12A8E922828B1FBE6FCA8D404FDA65E0F78CDA 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* UnityWebRequest_SerializeSimpleForm_mC654F6D0859FE746BCBF2FE24D2D085E7973A155 (Dictionary_2_tDE3227CA5E7A32F5070BD24C69F42204A3ADE9D5 * ___formFields0, const RuntimeMethod* method);
 // System.Void UnityEngine.Networking.UploadHandler::set_contentType(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UploadHandler_set_contentType_mAECD24AB554541300BD126E01C65329F0A29A328 (UploadHandler_t5F80A2A6874D4D330751BE3524009C21C9B74BDA * __this, String_t* ___value0, const RuntimeMethod* method);
-// System.String UnityEngine.Networking.UnityWebRequest::UnEscapeURL(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityWebRequest_UnEscapeURL_m457D92D70CDA1FF795D805B1E2B6778DA841B2B2 (String_t* ___s0, Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * ___e1, const RuntimeMethod* method);
-// System.Byte[] UnityEngine.WWWTranscoder::URLDecode(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* WWWTranscoder_URLDecode_mF3500816E9A9E97BB5651FFACC80E41EFCAE22F4 (ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* ___toEncode0, const RuntimeMethod* method);
 // System.Int32 System.String::get_Length()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m129FC0ADA02FECBED3C0B1A809AE84A5AEE1CF09_inline (String_t* __this, const RuntimeMethod* method);
 // System.String System.String::Concat(System.String,System.String)
@@ -4135,6 +4131,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t * StringBuilder_Append_mD02AB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_PathAndQuery_m0FFF28F15DF953C5866C2A0DEEA2034ECE6A0F35 (Uri_t4A915E1CC15B2C650F478099AD448E9466CBF612 * __this, const RuntimeMethod* method);
 // System.String System.Uri::get_Fragment()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Fragment_m1734B2D3F27F38AA342CB65885DE732160501E72 (Uri_t4A915E1CC15B2C650F478099AD448E9466CBF612 * __this, const RuntimeMethod* method);
+// System.Byte[] UnityEngine.WWWTranscoder::URLDecode(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* WWWTranscoder_URLDecode_mF3500816E9A9E97BB5651FFACC80E41EFCAE22F4 (ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* ___toEncode0, const RuntimeMethod* method);
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Regex__ctor_m8BB2137D7B0A93CD70FD3061579C7456BB65216E (Regex_t90F443D398F44965EA241A652ED75DF5BA072A1F * __this, String_t* ___pattern0, const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
@@ -6961,123 +6959,6 @@ IL_001d:
 		NullCheck(L_11);
 		UnityWebRequest_set_downloadHandler_m7496D2C5F755BEB68651A4F33EA9BDA319D092C2(L_11, L_12, /*hidden argument*/NULL);
 		return;
-	}
-}
-// System.String UnityEngine.Networking.UnityWebRequest::UnEscapeURL(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityWebRequest_UnEscapeURL_mD5AD8596631881C9F73455304182CAF8C32CD9A9 (String_t* ___s0, const RuntimeMethod* method)
-{
-	String_t* V_0 = NULL;
-	{
-		String_t* L_0 = ___s0;
-		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_1;
-		L_1 = Encoding_get_UTF8_mA1F9F8EACB3EEA1583247AA10DCE51C3A0A13469(/*hidden argument*/NULL);
-		String_t* L_2;
-		L_2 = UnityWebRequest_UnEscapeURL_m457D92D70CDA1FF795D805B1E2B6778DA841B2B2(L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		String_t* L_3 = V_0;
-		return L_3;
-	}
-}
-// System.String UnityEngine.Networking.UnityWebRequest::UnEscapeURL(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityWebRequest_UnEscapeURL_m457D92D70CDA1FF795D805B1E2B6778DA841B2B2 (String_t* ___s0, Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * ___e1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WWWTranscoder_t61D467EE2097E0FE6FA215AAEA4D3BF4216CB771_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* V_0 = NULL;
-	ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* V_1 = NULL;
-	bool V_2 = false;
-	String_t* V_3 = NULL;
-	bool V_4 = false;
-	int32_t G_B5_0 = 0;
-	{
-		String_t* L_0 = ___s0;
-		V_2 = (bool)((((RuntimeObject*)(String_t*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
-		bool L_1 = V_2;
-		if (!L_1)
-		{
-			goto IL_000d;
-		}
-	}
-	{
-		V_3 = (String_t*)NULL;
-		goto IL_0049;
-	}
-
-IL_000d:
-	{
-		String_t* L_2 = ___s0;
-		NullCheck(L_2);
-		int32_t L_3;
-		L_3 = String_IndexOf_mEE2D2F738175E3FF05580366D6226DBD673CA2BE(L_2, ((int32_t)37), /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_3) == ((uint32_t)(-1)))))
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		String_t* L_4 = ___s0;
-		NullCheck(L_4);
-		int32_t L_5;
-		L_5 = String_IndexOf_mEE2D2F738175E3FF05580366D6226DBD673CA2BE(L_4, ((int32_t)43), /*hidden argument*/NULL);
-		G_B5_0 = ((((int32_t)L_5) == ((int32_t)(-1)))? 1 : 0);
-		goto IL_0026;
-	}
-
-IL_0025:
-	{
-		G_B5_0 = 0;
-	}
-
-IL_0026:
-	{
-		V_4 = (bool)G_B5_0;
-		bool L_6 = V_4;
-		if (!L_6)
-		{
-			goto IL_0030;
-		}
-	}
-	{
-		String_t* L_7 = ___s0;
-		V_3 = L_7;
-		goto IL_0049;
-	}
-
-IL_0030:
-	{
-		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_8 = ___e1;
-		String_t* L_9 = ___s0;
-		NullCheck(L_8);
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_10;
-		L_10 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_8, L_9);
-		V_0 = L_10;
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_11 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(WWWTranscoder_t61D467EE2097E0FE6FA215AAEA4D3BF4216CB771_il2cpp_TypeInfo_var);
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_12;
-		L_12 = WWWTranscoder_URLDecode_mF3500816E9A9E97BB5651FFACC80E41EFCAE22F4(L_11, /*hidden argument*/NULL);
-		V_1 = L_12;
-		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_13 = ___e1;
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_14 = V_1;
-		NullCheck(L_13);
-		String_t* L_15;
-		L_15 = VirtFuncInvoker1< String_t*, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* >::Invoke(33 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_13, L_14);
-		V_3 = L_15;
-		goto IL_0049;
-	}
-
-IL_0049:
-	{
-		String_t* L_16 = V_3;
-		return L_16;
 	}
 }
 // System.Byte[] UnityEngine.Networking.UnityWebRequest::SerializeSimpleForm(System.Collections.Generic.Dictionary`2<System.String,System.String>)

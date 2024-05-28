@@ -276,7 +276,7 @@ static NSString *const TAG = @"MAUnityAdManager";
                 strongSelf.blockCallbackWhenFinishInit();
             }
             
-            //[[ALSdk shared] showMediationDebugger];
+            [[ALSdk shared] showMediationDebugger];
             [[ALSdk shared] settings].creativeDebuggerEnabled = NO;
             
         });
@@ -328,7 +328,7 @@ static NSString *const TAG = @"MAUnityAdManager";
 
 #pragma mark MREC
 -(void) createMrec{
-    NSString* bannerPosition = [self.plistData  objectForKey:@"ALBannerPosition"];
+    NSString* bannerPosition = [self.plistData  objectForKey:@"ALMrecPosition"];
     self.mrecUnitId = [self.plistData  objectForKey:@"ALMrecId"];
     
     [self createMRecWithAdUnitIdentifier:self.mrecUnitId atPosition:bannerPosition];

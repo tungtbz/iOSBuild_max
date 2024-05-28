@@ -106,8 +106,8 @@
     return AppsFlyerAdRevenueMediationNetworkTypeDirectMonetization;
 }
 
-- (void)logRevenueAdmodOpenAds:(NSString * _Nonnull)adSourceName adUnitId:(NSString * _Nonnull)adUnitId adValue:(float) adValue {
-    NSString* adFormat = @"App Open";
+- (void)logRevenueAdmob :(NSString * )adFormat source:(NSString * _Nonnull) adSourceName adUnitId:(NSString * _Nonnull) adUnitId adValue:(float) adValue {
+//    NSString* adFormat = @"App Open";
     NSString* currency = @"USD";
     
     

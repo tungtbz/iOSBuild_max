@@ -41009,7 +41009,7 @@ IL_006e:
 		L_29 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_28, /*hidden argument*/NULL);
 		NullCheck(L_27);
 		RuntimeArray * L_30;
-		L_30 = VirtFuncInvoker1< RuntimeArray *, Type_t * >::Invoke(47 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_27, L_29);
+		L_30 = VirtFuncInvoker1< RuntimeArray *, Type_t * >::Invoke(45 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_27, L_29);
 		NullCheck(L_26);
 		IPHostEntry_set_AddressList_m5D661027187141E20D78AE4795EA8DABA42BEF38_inline(L_26, ((IPAddressU5BU5D_tCB5D2302BEB72DDB30825F9EF457D39EEA5001EB*)IsInst((RuntimeObject*)L_30, IPAddressU5BU5D_tCB5D2302BEB72DDB30825F9EF457D39EEA5001EB_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		IPHostEntry_tD787E3A1E0F633AC5A7761921DE4DC2A8EA117AA * L_31 = V_0;

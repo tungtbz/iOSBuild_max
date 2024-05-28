@@ -5696,7 +5696,7 @@ IL_0008:
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_7);
 		NullCheck(L_4);
 		Type_t * L_8;
-		L_8 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(103 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_4, L_6);
+		L_8 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(99 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_4, L_6);
 		NullCheck(L_8);
 		MethodInfo_t * L_9;
 		L_9 = Type_GetMethod_mDD47332AAF3036AAFC4C6626A999A452E7143DCF(L_8, _stringLiteral08908F0785BBC0CCD8F712A32DE01C9E45597F21, /*hidden argument*/NULL);
@@ -7153,7 +7153,7 @@ IL_001b:
 		int32_t L_5 = __this->get_flags_5();
 		NullCheck(L_4);
 		MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E* L_6;
-		L_6 = VirtFuncInvoker1< MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E*, int32_t >::Invoke(63 /* System.Reflection.MemberInfo[] System.Type::GetMembers(System.Reflection.BindingFlags) */, L_4, L_5);
+		L_6 = VirtFuncInvoker1< MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E*, int32_t >::Invoke(60 /* System.Reflection.MemberInfo[] System.Type::GetMembers(System.Reflection.BindingFlags) */, L_4, L_5);
 		__this->set_U3CU3E7__wrap1_8(L_6);
 		__this->set_U3CU3E7__wrap2_9(0);
 		goto IL_008c;
@@ -7207,7 +7207,7 @@ IL_00b6:
 		int32_t L_17 = __this->get_flags_5();
 		NullCheck(L_16);
 		MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E* L_18;
-		L_18 = VirtFuncInvoker1< MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E*, int32_t >::Invoke(63 /* System.Reflection.MemberInfo[] System.Type::GetMembers(System.Reflection.BindingFlags) */, L_16, L_17);
+		L_18 = VirtFuncInvoker1< MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF110CBF031C99E*, int32_t >::Invoke(60 /* System.Reflection.MemberInfo[] System.Type::GetMembers(System.Reflection.BindingFlags) */, L_16, L_17);
 		__this->set_U3CU3E7__wrap1_8(L_18);
 		__this->set_U3CU3E7__wrap2_9(0);
 		goto IL_0109;

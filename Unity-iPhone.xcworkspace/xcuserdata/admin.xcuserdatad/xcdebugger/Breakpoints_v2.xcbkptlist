@@ -14,9 +14,9 @@
             filePath = "Libraries/RofiSdk/Plugins/iOS/ApplovinAdsHelper.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "670"
-            endingLineNumber = "670"
-            landmarkName = "-showAdViewWithAdUnitIdentifier:adFormat:"
+            startingLineNumber = "673"
+            endingLineNumber = "673"
+            landmarkName = "-hideAdViewWithAdUnitIdentifier:adFormat:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,8 +30,8 @@
             filePath = "Libraries/RofiSdk/Plugins/iOS/ApplovinAdsHelper.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "667"
-            endingLineNumber = "667"
+            startingLineNumber = "670"
+            endingLineNumber = "670"
             landmarkName = "-showAdViewWithAdUnitIdentifier:adFormat:"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "Libraries/RofiSdk/Plugins/iOS/ApplovinAdsHelper.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1538"
-            endingLineNumber = "1538"
+            startingLineNumber = "1541"
+            endingLineNumber = "1541"
             landmarkName = "-didLoadAd:"
             landmarkType = "7">
          </BreakpointContent>

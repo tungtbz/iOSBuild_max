@@ -4,13 +4,13 @@
 #import "AnalyticHelper.h"
 #import "FirebaseRemoteConfigHelper.h"
 #import "GoogleMobileAdsConsentManager.h"
+#import "AdmobBannerAdsManager.h"
 
 //admod aoa
 #import "AppOpenAdManager.h"
 
-@interface rofisdk : NSObject<AppOpenAdManagerDelegate>{
+@interface rofisdk : NSObject<AppOpenAdManagerDelegate,AdmobBannerAdsManagerDelegate>{
     bool isAATFlowFinished;
-    bool isUMPFlowFinished;
     bool isRunConsentFlow;
     bool isRemoteConfigFetched;
     int consentCode;
@@ -24,6 +24,7 @@
 - (void)warmUp;
 - (void)InitAdsService;
 - (BOOL)IsConsentFlowDone;
+- (BOOL)IsATTFlowFinished;
 - (BOOL)IsRemoteConfigFetched;
 - (int)consentCode;
 

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) logEvent: (NSString* _Nonnull) eventName parameters:(nullable NSDictionary<NSString *, id> *)parameters;
 - (void) logRevenue : (NSDictionary<NSString *, id> *) adData;
 
-- (void) logRevenueAdmodOpenAds : (NSString * _Nonnull) adSourceName adUnitId:(NSString * _Nonnull) adUnitId adValue:(float) adValue;
+- (void) logRevenueAdmob :(NSString * )adFormat source:(NSString * _Nonnull) adSourceName adUnitId:(NSString * _Nonnull) adUnitId adValue:(float) adValue;
 
 +(AnalyticHelper *_Nonnull) sharedObject;
 - (instancetype)init NS_UNAVAILABLE;

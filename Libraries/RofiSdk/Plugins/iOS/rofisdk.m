@@ -46,20 +46,8 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     
     if(_isWarmUped) return;
     isAATFlowFinished = false;
-    isRemoteConfigFetched = false;
-    __weak __typeof__(self) weakSelf = self;
     
-    [[DevicesFeatures sharedObject] requestATT:^(BOOL granted) {
-        NSLog(@"XXX AAT Finish");
-        __strong __typeof__(self) strongSelf = weakSelf;
-        
-        if (!strongSelf) {
-          return;
-        }
-        [[DevicesFeatures sharedObject] requestNotification:^(BOOL granted) {
-            isAATFlowFinished =  true;
-        }];
-    }];
+    isRemoteConfigFetched = false;
     
     [self loadLocalCache];
     
@@ -68,25 +56,45 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     delayStartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                        target:self
                                                      selector:@selector(onTick)
-                                                       userInfo: nil repeats:YES];
-
+                                                     userInfo: nil repeats:YES];
+    
     _isWarmUped = YES;
 }
 
--(void) startTick{
+-(void)requestATT{
+    NSLog(@"XXX requestATT");
+    __weak __typeof__(self) weakSelf = self;
+    
+    [[DevicesFeatures sharedObject] requestATT:^(BOOL granted) {
+        NSLog(@"XXX AAT Finish");
+        __strong __typeof__(self) strongSelf = weakSelf;
+        
+        if (!strongSelf) {
+            return;
+        }
+        [[DevicesFeatures sharedObject] requestNotification:^(BOOL granted) {
+            isAATFlowFinished =  true;
+        }];
+    }];
+}
 
+-(void) startTick{
+    
 }
 
 -(void)onTick{
-    if(!isAATFlowFinished) return;
     NSLog(@"XXX onTick");
     
+    int internetStatus = [[DevicesFeatures sharedObject] internetStatus];
+    
     currentTick += 1;
+    if(internetStatus == 0) return;
+    
     if(!isRunConsentFlow && currentTick >= 3){
         [self runConsentFlow];
     }
     
-    if(!isRunConsentFlow && [[DevicesFeatures sharedObject] internetStatus] != 0){
+    if(!isRunConsentFlow && internetStatus != 0){
         [self runConsentFlow];
     }
 }
@@ -102,16 +110,18 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     isRunConsentFlow = true;
     
     if(![[DevicesFeatures sharedObject] isOnline]){
-        [GoogleMobileAdsConsentManager.sharedInstance byPassConsentForm];
         NSLog(@"XXX runConsentFlow 1");
+        
+        [GoogleMobileAdsConsentManager.sharedInstance byPassConsentForm];
         [self InitAdsService];
+        [self requestATT];
     }else{
         __weak __typeof__(self) weakSelf = self;
         [GoogleMobileAdsConsentManager.sharedInstance gatherConsentFromConsentPresentationViewController:^(NSError * _Nullable error) {
             __strong __typeof__(self) strongSelf = weakSelf;
             
             if (!strongSelf) {
-              return;
+                return;
             }
             
             if(error){
@@ -122,30 +132,34 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
             
             NSLog(@"XXX runConsentFlow 2");
             [strongSelf InitAdsService];
+            [strongSelf requestATT];
             
             if (GoogleMobileAdsConsentManager.sharedInstance.canRequestAds) {
-                                                [strongSelf startGoogleMobileAdsSDK];
-                                              }
+                [strongSelf startGoogleMobileAdsSDK];
+            }
         }];
     }
     
     // This sample attempts to load ads using consent obtained in the previous session.
-      if (GoogleMobileAdsConsentManager.sharedInstance.canRequestAds) {
+    if (GoogleMobileAdsConsentManager.sharedInstance.canRequestAds) {
         [self startGoogleMobileAdsSDK];
-      }
+    }
     
     [self stopTimeTick];
 }
 
 - (void)startGoogleMobileAdsSDK {
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    // Initialize the Google Mobile Ads SDK.
-    [GADMobileAds.sharedInstance startWithCompletionHandler:nil];
-
-    // Request an ad.
-    [AppOpenAdManager.sharedInstance loadAd];
-  });
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // Initialize the Google Mobile Ads SDK.
+        [GADMobileAds.sharedInstance startWithCompletionHandler:nil];
+        
+        // Request an ad.
+        [AppOpenAdManager.sharedInstance loadAd];
+        
+        // Create Banner
+        [[AdmobBannerAdsManager sharedInstance] createBanner];
+    });
 }
 
 -(void) setupSdk{
@@ -164,7 +178,7 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
 }
 
 -(void) adRevenue:(NSString *)adSourceName adUnitId:(NSString *)adUnitId adValue:(float)adValue{
-    [[AnalyticHelper sharedObject] logRevenueAdmodOpenAds:adSourceName adUnitId:adUnitId adValue:adValue];
+    [[AnalyticHelper sharedObject] logRevenueAdmob:@"AOA" source:adSourceName adUnitId:adUnitId adValue:adValue];
 }
 
 -(void) loadLocalCache{
@@ -194,6 +208,10 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     return isRemoteConfigFetched;
 }
 
+-(BOOL)IsATTFlowFinished{
+    return isAATFlowFinished;
+}
+
 -(int)consentCode{
     return consentCode;
 }
@@ -202,7 +220,7 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
 {
     NSLog(@"XXX InitAdsService ====");
     AppOpenAdManager.sharedInstance.delegate = self;
-
+    
     //Applovin Max
     [[ApplovinAdsHelper sharedObject] initWithCallback:^{
         //init analytic after
@@ -222,7 +240,7 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     [[ApplovinAdsHelper sharedObject] setAdDisplayCallback:^(NSDictionary<NSString *,id> * _Nullable adData) {
         if(adData != nil){
             //ad displayed
-
+            
             if ( [@"INTER" isEqualToString: adData[@"adFormat"]] ){
                 NSLog(@"Log event inter Ad Displayed");
                 [[AnalyticHelper sharedObject] logEvent:@"af_inters_displayed" parameters:nil];
@@ -304,13 +322,26 @@ char *const SDK_OBJECT_NAME = "RofiSdkHelper";
     }
 }
 
+#pragma Admob Banner Delegates
+- (void) admobBannerAdLoaded{
+    
+}
+
+- (void) admobBannerAdClicked{
+    [[ApplovinAdsHelper sharedObject] increaseBlockAutoShowInterCount];
+}
+
+- (void) admobBannerAdRevenue:(NSString * _Nonnull)adSourceName adUnitId:(NSString * _Nonnull)adUnitId adValue:(float) adValue {
+    [[AnalyticHelper sharedObject] logRevenueAdmob:@"Banner" source:adSourceName adUnitId:adUnitId adValue:adValue];
+}
+
 @end
 
 #ifdef __cplusplus
 extern "C" {
 #endif
     void _WarmUp(){
-    //not used
+        //not used
     }
     
     void _OnReadyToShowAutoInterAds(){
@@ -334,17 +365,25 @@ extern "C" {
     }
     
     void _ShowBanner(){
-        [[ApplovinAdsHelper sharedObject] showBanner];
+        bool isShowCollapBanner = [[FirebaseRemoteConfigHelper sharedObject] getBoolValue:GetStringParam("show_collap_ad")];
+        if(isShowCollapBanner)
+            [[AdmobBannerAdsManager sharedInstance] showBanner];
+        else
+            [[ApplovinAdsHelper sharedObject] showBanner];
     }
-     
+    
     void _HideBanner(){
-        [[ApplovinAdsHelper sharedObject] hideBanner];
+        bool isShowCollapBanner = [[FirebaseRemoteConfigHelper sharedObject] getBoolValue:GetStringParam("show_collap_ad")];
+        if(isShowCollapBanner)
+            [[AdmobBannerAdsManager sharedInstance] hideBanner];
+        else
+            [[ApplovinAdsHelper sharedObject] hideBanner];
     }
-         
+    
     void _HideMrec(){
         [[ApplovinAdsHelper sharedObject] hideMrec];
     }
-
+    
     void _ShowMrec(){
         [[ApplovinAdsHelper sharedObject] showMrec];
     }
@@ -375,18 +414,18 @@ extern "C" {
     
     void _LoadAppOpenAds(){
         [[AppOpenAdManager sharedInstance] loadAd];
-//        [[ApplovinAdsHelper sharedObject] loadAppOpenAds];
+        //        [[ApplovinAdsHelper sharedObject] loadAppOpenAds];
     }
     void _ShowAppOpenAds(){
         [[AppOpenAdManager sharedInstance] showAdIfAvailable];
-//        [[ApplovinAdsHelper sharedObject] showAppOpenAds];
+        //        [[ApplovinAdsHelper sharedObject] showAppOpenAds];
         
     }
     bool _IsAppOpenAdsReady(){
         return [[AppOpenAdManager sharedInstance] isAdAvailable];
-//        return [[ApplovinAdsHelper sharedObject] isAppOpenAdsReady];
+        //        return [[ApplovinAdsHelper sharedObject] isAppOpenAdsReady];
     }
-
+    
     char* _GetAdsId(){
         if([[AppsFlyerLib shared] advertisingIdentifier])
             return MakeStringCopy([[AppsFlyerLib shared] advertisingIdentifier]);
@@ -397,11 +436,11 @@ extern "C" {
     bool _GetBoolValue(char* key){
         return [[FirebaseRemoteConfigHelper sharedObject] getBoolValue:GetStringParam(key)];
     }
-   
+    
     int _GetIntValue(char* key){
         return [[FirebaseRemoteConfigHelper sharedObject] getIntValue:GetStringParam(key)];
     }
-     
+    
     char* _GetStringValue(char* key){
         NSString* rtn = [[FirebaseRemoteConfigHelper sharedObject] getStringValue:GetStringParam(key)];
         return MakeStringCopy(rtn);
@@ -419,12 +458,12 @@ extern "C" {
     void _TurnOffTorchLight(){
         [[DevicesFeatures sharedObject] turnOffTorchForever];
     }
-
+    
     void _Vibrate(){
         [[DevicesFeatures sharedObject] Vibrate];
-
+        
     }
-	
+    
     void _ShowRate(){
         if (@available(iOS 13.0, *)) {
             [[DevicesFeatures sharedObject] OpenRateIos13:[UIApplication sharedApplication].keyWindow.windowScene];
@@ -433,11 +472,11 @@ extern "C" {
             [[DevicesFeatures sharedObject] OpenRate];
         }
     }
-
+    
     bool _IsOnline(){
         return [[DevicesFeatures sharedObject] isOnline];
     }
-
+    
     bool _IsCameraPermissionGranted(){
         return [[DevicesFeatures sharedObject] isCameraPermissionGranted];
     }
@@ -490,7 +529,7 @@ extern "C" {
     }
     
     bool _IsConsentFlowDone(){
-        return [[rofisdk sharedObject] IsConsentFlowDone] && 
+        return [[rofisdk sharedObject] IsConsentFlowDone] &&
         [[GoogleMobileAdsConsentManager sharedInstance ] isFlowFinished];
     }
     
@@ -503,8 +542,16 @@ extern "C" {
         return [[GoogleMobileAdsConsentManager sharedInstance ] canRequestAds];
     }
     
+    bool _IsATTFlowFinished(){
+        return [[rofisdk sharedObject] IsATTFlowFinished];
+    }
+    
     bool _IsRemoteConfigReady(){
         return [[rofisdk sharedObject] IsRemoteConfigFetched];
+    }
+    
+    void _LoadCollapsibleBanner(){
+        [[AdmobBannerAdsManager sharedInstance] requestBanner:YES];
     }
     
 #ifdef __cplusplus

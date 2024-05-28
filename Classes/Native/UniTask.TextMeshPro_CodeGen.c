@@ -106,13 +106,16 @@ extern void TextMeshProAsyncExtensions_BindToCore_m1A27EFC4C2BD55F5B034EC4D5783C
 // 0x0000002F System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T>,TMPro.TMP_Text,System.Threading.CancellationToken,System.Boolean)
 // 0x00000030 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions::BindTo(Cysharp.Threading.Tasks.AsyncReactiveProperty`1<T>,TMPro.TMP_Text,System.Boolean)
 // 0x00000031 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.TextMeshProAsyncExtensions::BindToCore(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T>,TMPro.TMP_Text,System.Threading.CancellationToken,System.Boolean)
-// 0x00000032 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__44::MoveNext()
+// 0x00000032 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__44::.ctor()
+extern void U3CBindToCoreU3Ed__44__ctor_m0DAE1A3C875F945EF86407CDD34B3E6EFA76E54B (void);
+// 0x00000033 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__44::MoveNext()
 extern void U3CBindToCoreU3Ed__44_MoveNext_m2373A9663F4E4A336D6FA65F00AC6CEF9C7A485A (void);
-// 0x00000033 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__44::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000034 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__44::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CBindToCoreU3Ed__44_SetStateMachine_m488211ADCE8307C4929FDF7946537EBB8F5CC85F (void);
-// 0x00000034 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__48`1::MoveNext()
-// 0x00000035 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__48`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
-static Il2CppMethodPointer s_methodPointers[53] = 
+// 0x00000035 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__48`1::.ctor()
+// 0x00000036 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__48`1::MoveNext()
+// 0x00000037 System.Void Cysharp.Threading.Tasks.TextMeshProAsyncExtensions/<BindToCore>d__48`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+static Il2CppMethodPointer s_methodPointers[55] = 
 {
 	TextMeshProAsyncExtensions_GetAsyncValueChangedEventHandler_mD4A527E3B3BD889D6DA0E4CEFA4BDD5965CAE3C9,
 	TextMeshProAsyncExtensions_GetAsyncValueChangedEventHandler_m3D5DF5B1EBC58610C064FBC28DAEF603482A673A,
@@ -163,109 +166,108 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	NULL,
 	NULL,
 	NULL,
+	U3CBindToCoreU3Ed__44__ctor_m0DAE1A3C875F945EF86407CDD34B3E6EFA76E54B,
 	U3CBindToCoreU3Ed__44_MoveNext_m2373A9663F4E4A336D6FA65F00AC6CEF9C7A485A,
 	U3CBindToCoreU3Ed__44_SetStateMachine_m488211ADCE8307C4929FDF7946537EBB8F5CC85F,
 	NULL,
 	NULL,
+	NULL,
 };
-extern void U3CBindToCoreU3Ed__44_MoveNext_m2373A9663F4E4A336D6FA65F00AC6CEF9C7A485A_AdjustorThunk (void);
-extern void U3CBindToCoreU3Ed__44_SetStateMachine_m488211ADCE8307C4929FDF7946537EBB8F5CC85F_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+static const int32_t s_InvokerIndices[55] = 
 {
-	{ 0x06000032, U3CBindToCoreU3Ed__44_MoveNext_m2373A9663F4E4A336D6FA65F00AC6CEF9C7A485A_AdjustorThunk },
-	{ 0x06000033, U3CBindToCoreU3Ed__44_SetStateMachine_m488211ADCE8307C4929FDF7946537EBB8F5CC85F_AdjustorThunk },
-};
-static const int32_t s_InvokerIndices[53] = 
-{
-	12538,
-	11849,
-	12310,
-	11559,
-	12538,
-	11849,
-	12538,
-	11849,
-	12310,
-	11559,
-	12538,
-	11849,
-	12538,
-	11849,
-	12284,
-	11540,
-	12538,
-	11849,
-	12538,
-	11849,
-	12284,
-	11540,
-	12538,
-	11849,
-	12538,
-	11849,
-	12310,
-	11559,
-	12538,
-	11849,
-	12538,
-	11849,
-	12310,
-	11559,
-	12538,
-	11849,
-	12538,
-	11849,
-	12310,
-	11559,
-	12538,
-	11849,
-	11463,
-	10963,
-	10897,
+	12579,
+	11886,
+	12353,
+	11595,
+	12579,
+	11886,
+	12579,
+	11886,
+	12353,
+	11595,
+	12579,
+	11886,
+	12579,
+	11886,
+	12324,
+	11576,
+	12579,
+	11886,
+	12579,
+	11886,
+	12324,
+	11576,
+	12579,
+	11886,
+	12579,
+	11886,
+	12353,
+	11595,
+	12579,
+	11886,
+	12579,
+	11886,
+	12353,
+	11595,
+	12579,
+	11886,
+	12579,
+	11886,
+	12353,
+	11595,
+	12579,
+	11886,
+	11501,
+	11001,
+	10938,
 	-1,
 	-1,
 	-1,
 	-1,
-	9673,
-	7636,
+	9718,
+	9718,
+	7674,
+	-1,
 	-1,
 	-1,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[5] = 
 {
-	{ 0x02000004, { 4, 5 } },
+	{ 0x02000004, { 6, 5 } },
 	{ 0x0600002E, { 0, 1 } },
 	{ 0x0600002F, { 1, 1 } },
 	{ 0x06000030, { 2, 1 } },
-	{ 0x06000031, { 3, 1 } },
+	{ 0x06000031, { 3, 3 } },
 };
-static const Il2CppRGCTXDefinition s_rgctxValues[9] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[11] = 
 {
-	{ (Il2CppRGCTXDataType)3, 107066 },
-	{ (Il2CppRGCTXDataType)3, 107067 },
-	{ (Il2CppRGCTXDataType)3, 107065 },
-	{ (Il2CppRGCTXDataType)3, 100343 },
-	{ (Il2CppRGCTXDataType)2, 21750 },
-	{ (Il2CppRGCTXDataType)2, 23122 },
-	{ (Il2CppRGCTXDataType)3, 100251 },
-	{ (Il2CppRGCTXDataType)2, 4603 },
-	{ (Il2CppRGCTXDataType)3, 100301 },
+	{ (Il2CppRGCTXDataType)3, 100784 },
+	{ (Il2CppRGCTXDataType)3, 100785 },
+	{ (Il2CppRGCTXDataType)3, 100783 },
+	{ (Il2CppRGCTXDataType)2, 8751 },
+	{ (Il2CppRGCTXDataType)3, 2792 },
+	{ (Il2CppRGCTXDataType)3, 94283 },
+	{ (Il2CppRGCTXDataType)2, 21256 },
+	{ (Il2CppRGCTXDataType)2, 22628 },
+	{ (Il2CppRGCTXDataType)3, 94235 },
+	{ (Il2CppRGCTXDataType)2, 4498 },
+	{ (Il2CppRGCTXDataType)3, 94257 },
 };
 extern const CustomAttributesCacheGenerator g_UniTask_TextMeshPro_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UniTask_TextMeshPro_CodeGenModule;
 const Il2CppCodeGenModule g_UniTask_TextMeshPro_CodeGenModule = 
 {
 	"UniTask.TextMeshPro.dll",
-	53,
+	55,
 	s_methodPointers,
-	2,
-	s_adjustorThunks,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
 	5,
 	s_rgctxIndices,
-	9,
+	11,
 	s_rgctxValues,
 	NULL,
 	g_UniTask_TextMeshPro_AttributeGenerators,
